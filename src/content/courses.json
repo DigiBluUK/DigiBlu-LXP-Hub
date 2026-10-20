@@ -1,0 +1,1676 @@
+[
+  {
+    "id": "data-pl300-power-bi-data-analyst",
+    "title": "Microsoft Certified: Power BI Data Analyst Associate (Exam PL-300)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/",
+    "description": "Industry-recognised credential that proves you can prepare, model, visualise and secure data in Power BI using Power Query and DAX. A strong first goal for analysts and BI developers who build reports for business stakeholders.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "BI Developer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free Microsoft Learn prep material; proctored exam approx. US$165 (price varies by country)",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 100-minute proctored exam",
+    "prerequisites": "Familiarity with Power BI Desktop, Power Query and basic DAX is expected",
+    "tags": [
+      "Power BI",
+      "DAX",
+      "Power Query",
+      "PL-300",
+      "Data modelling"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-dp700-fabric-data-engineer",
+    "title": "Microsoft Certified: Fabric Data Engineer Associate (Exam DP-700)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/fabric-data-engineer-associate/",
+    "description": "Validates the skills to ingest, transform, secure and monitor analytics solutions in Microsoft Fabric using SQL, PySpark and KQL. Suited to engineers who build lakehouses, warehouses and pipelines for analytics teams.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free Microsoft Learn prep material; proctored exam approx. US$165 (price varies by country)",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 100-minute proctored exam",
+    "prerequisites": "Working knowledge of SQL and PySpark; basic KQL helps",
+    "tags": [
+      "Microsoft Fabric",
+      "DP-700",
+      "Data engineering",
+      "PySpark",
+      "Lakehouse",
+      "KQL"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-dp900-azure-data-fundamentals",
+    "title": "Microsoft Certified: Azure Data Fundamentals (Exam DP-900)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+    "description": "Entry-level credential covering core data concepts: relational and non-relational data, transactional versus analytical workloads, and the Azure services that support them. Ideal for newcomers moving into data roles or working alongside data teams.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "BI Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free Microsoft Learn prep material; proctored exam approx. US$99 (price varies by country)",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 45-minute proctored exam",
+    "prerequisites": "",
+    "tags": [
+      "Azure",
+      "DP-900",
+      "Data fundamentals",
+      "Databases",
+      "Analytics workloads"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-kaggle-intro-to-sql",
+    "title": "Intro to SQL",
+    "provider": "Kaggle Learn",
+    "url": "https://www.kaggle.com/learn/intro-to-sql",
+    "description": "Short, hands-on course that teaches how to query relational data with SQL, with exercises that run in the browser on real datasets. A quick way for analysts and scientists to get productive with SELECT, joins and aggregations.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "BI Developer",
+      "Data Scientist",
+      "Data Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free with a free Kaggle account; certificate of completion on finishing",
+    "outcome": "Completion certificate",
+    "duration": "~3 hours",
+    "prerequisites": "",
+    "tags": [
+      "SQL",
+      "BigQuery",
+      "Querying",
+      "Joins",
+      "Aggregation"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-freecodecamp-data-analysis-with-python",
+    "title": "Data Analysis with Python Certification",
+    "provider": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+    "description": "Project-based curriculum that teaches data analysis in Python with NumPy, pandas, Matplotlib and Seaborn, ending in certification projects. Best for people who know basic Python and want a free, structured route into data work.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "Data Scientist",
+      "Data Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Completely free, including freeCodeCamp's own certification (not an industry exam)",
+    "outcome": "Completion certificate",
+    "duration": "Self-paced; multi-week, project-based",
+    "prerequisites": "Basic Python programming",
+    "tags": [
+      "Python",
+      "pandas",
+      "NumPy",
+      "Matplotlib",
+      "Data analysis"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-coursera-google-data-analytics-certificate",
+    "title": "Google Data Analytics Professional Certificate",
+    "provider": "Coursera (Google)",
+    "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "description": "Nine-course programme that takes complete beginners through data cleaning, analysis and visualisation with spreadsheets, SQL, Python and Tableau, finishing with a capstone case study. Gives a shareable certificate of completion, not an exam-based industry certification.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "BI Developer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription (about US$49/month in the US, free trial available); total cost depends on how fast you finish",
+    "outcome": "Completion certificate",
+    "duration": "About 6 months at 10 hrs/week",
+    "prerequisites": "None; no degree or prior experience required",
+    "tags": [
+      "Data analytics",
+      "SQL",
+      "Spreadsheets",
+      "Tableau",
+      "Python",
+      "Data visualisation"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-mslearn-get-started-with-microsoft-fabric",
+    "title": "Get started with Microsoft Fabric",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-fabric/",
+    "description": "Eight-module learning path that tours Fabric end to end: lakehouses, data warehouses, Real-Time Intelligence, data science, SQL databases and semantic models. A good map of the platform before choosing a specialism or a Fabric exam.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "Data Engineer",
+      "Data Scientist",
+      "BI Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "Free on Microsoft Learn; a Fabric trial or tenant is needed for the hands-on labs",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (8 modules)",
+    "prerequisites": "Basic data concepts and terminology (data engineering, modelling, analysis)",
+    "tags": [
+      "Microsoft Fabric",
+      "Lakehouse",
+      "Data warehouse",
+      "Real-Time Intelligence",
+      "Semantic models"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-youtube-guy-in-a-cube",
+    "title": "Guy in a Cube (YouTube channel)",
+    "provider": "YouTube - Guy in a Cube",
+    "url": "https://www.youtube.com/@GuyInACube",
+    "description": "Long-running channel by Microsoft data experts with short, practical videos on Power BI, Fabric, DAX and report design, plus coverage of new releases. Handy for quickly solving a specific problem or keeping up with monthly updates.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Analyst",
+      "BI Developer",
+      "Data Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Power BI",
+      "Microsoft Fabric",
+      "DAX",
+      "Report design",
+      "Tips and tricks"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "data-youtube-sqlbi",
+    "title": "SQLBI (YouTube channel)",
+    "provider": "YouTube - SQLBI",
+    "url": "https://www.youtube.com/@SQLBI",
+    "description": "Deep-dive videos from the SQLBI team on DAX, tabular data modelling, performance tuning and Power BI best practice. Aimed at practitioners who already build semantic models and want to go further.",
+    "skillAreas": [
+      "data-analytics"
+    ],
+    "roles": [
+      "BI Developer",
+      "Data Analyst",
+      "Data Engineer"
+    ],
+    "level": "Advanced",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "Working knowledge of Power BI and basic DAX",
+    "tags": [
+      "DAX",
+      "Data modelling",
+      "Tabular",
+      "Performance tuning",
+      "Power BI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-ai901-azure-ai-fundamentals",
+    "title": "Microsoft Certified: Azure AI Fundamentals (Exam AI-901)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+    "description": "Entry-level Microsoft credential covering core AI concepts, machine learning, computer vision, language and generative AI, plus hands-on use of Microsoft Foundry. It replaces the older AI-900 exam and is a sensible first AI certification for technical beginners.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Data Scientist",
+      "ML Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free Microsoft Learn prep material; proctored exam approx. US$99 (price varies by country)",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; proctored exam",
+    "prerequisites": "Conceptual AI knowledge, basic Python syntax and familiarity with Azure resources",
+    "tags": [
+      "Azure AI",
+      "AI-901",
+      "Microsoft Foundry",
+      "Generative AI",
+      "Machine learning",
+      "Responsible AI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-ab730-ai-business-professional",
+    "title": "Microsoft Certified: AI Business Professional (Exam AB-730)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-business-professional/",
+    "description": "No-code credential showing you can use generative AI tools such as Microsoft 365 Copilot and agents to draft, analyse and decide faster in everyday business work. Well suited to non-technical staff who live in Outlook, Teams, Word, PowerPoint and Excel.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "Business User",
+      "All employees"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free Microsoft Learn prep material; proctored exam fee varies by country (confirm on Microsoft Learn before booking)",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 45-minute proctored exam",
+    "prerequisites": "Everyday use of core Microsoft 365 apps; no coding needed",
+    "tags": [
+      "Microsoft 365 Copilot",
+      "AB-730",
+      "Prompting",
+      "Generative AI",
+      "AI literacy"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-ai103-azure-ai-apps-agents-developer",
+    "title": "Microsoft Certified: Azure AI Apps and Agents Developer Associate (Exam AI-103)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/",
+    "description": "Role-based credential for developers who plan, build and deploy generative AI and agent solutions with Python and Microsoft Foundry, including vision, text analysis and information extraction. It is the current path for engineers who would previously have taken AI-102.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "Software Engineer",
+      "ML Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Proctored exam; fee varies by country (associate-level Microsoft exams are typically approx. US$165); study guide is free",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 120-minute proctored exam",
+    "prerequisites": "Python development experience and familiarity with Azure and generative AI concepts",
+    "tags": [
+      "Azure AI",
+      "AI-103",
+      "Microsoft Foundry",
+      "AI agents",
+      "Generative AI",
+      "Python"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-coursera-machine-learning-specialization",
+    "title": "Machine Learning Specialization",
+    "provider": "Coursera (Stanford Online & DeepLearning.AI)",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "description": "Three-course specialisation led by Andrew Ng that teaches supervised and unsupervised learning, neural networks and practical ML advice with Python. Earns a certificate of completion rather than an industry exam credential.",
+    "skillAreas": [
+      "ai",
+      "data-analytics"
+    ],
+    "roles": [
+      "Data Scientist",
+      "ML Engineer",
+      "Software Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription (about US$49/month in the US); certificates require payment and completing the graded assignments",
+    "outcome": "Completion certificate",
+    "duration": "About 2 months at 10 hrs/week",
+    "prerequisites": "Basic coding (loops, functions, conditionals) and high-school maths",
+    "tags": [
+      "Machine learning",
+      "Supervised learning",
+      "Neural networks",
+      "Python",
+      "Andrew Ng"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-mslearn-build-foundational-generative-ai-skills",
+    "title": "Build foundational generative AI skills",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/explore-microsoft-365-copilot-business-chat/",
+    "description": "Four-module path that explains how generative AI works, how to use it responsibly, and how to get value from Microsoft Copilot Chat through better prompts and features like Pages and agents. A practical AI-literacy starting point for any employee.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "All employees",
+      "Business User"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "Free on Microsoft Learn; some features depend on your Copilot licence",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (4 modules)",
+    "prerequisites": "Familiarity with accessing and using Microsoft 365",
+    "tags": [
+      "Generative AI",
+      "Microsoft Copilot",
+      "Prompt engineering",
+      "Responsible AI",
+      "AI literacy"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-google-machine-learning-crash-course",
+    "title": "Machine Learning Crash Course",
+    "provider": "Google for Developers",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "description": "Google's free, modular introduction to machine learning covering regression, classification, data preparation, neural networks, embeddings, large language models, production systems and ML fairness. Good for developers and analysts who want solid ML foundations.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "Data Scientist",
+      "ML Engineer",
+      "Software Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (modular)",
+    "prerequisites": "Basic Python and introductory algebra/statistics are helpful",
+    "tags": [
+      "Machine learning",
+      "Neural networks",
+      "LLMs",
+      "Embeddings",
+      "ML fairness"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-microsoft-generative-ai-for-beginners",
+    "title": "Generative AI for Beginners",
+    "provider": "Microsoft (GitHub)",
+    "url": "https://github.com/microsoft/generative-ai-for-beginners",
+    "description": "Open-source 21-lesson course from Microsoft Cloud Advocates that teaches how to build generative AI applications, from prompt engineering and RAG to function calling, agents and responsible use. Each lesson mixes concepts with code samples in Python and TypeScript.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "Software Engineer",
+      "ML Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free and open source (MIT); LLM API usage for the labs may incur cloud costs",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (21 lessons)",
+    "prerequisites": "Basic Python or TypeScript; access to an LLM API such as Azure OpenAI or Microsoft Foundry",
+    "tags": [
+      "Generative AI",
+      "Prompt engineering",
+      "RAG",
+      "AI agents",
+      "Azure OpenAI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-prompt-engineering-guide",
+    "title": "Prompt Engineering Guide",
+    "provider": "DAIR.AI",
+    "url": "https://www.promptingguide.ai/",
+    "description": "Free, regularly updated reference on designing prompts for large language models, covering techniques such as few-shot, chain-of-thought and RAG, plus agents, risks like prompt injection, and example prompts. Useful as a bookmark for both business users and developers.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "Business User",
+      "Software Engineer",
+      "ML Engineer",
+      "All employees"
+    ],
+    "level": "Beginner",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "Reference guide is free; the publisher also sells separate paid courses",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Prompt engineering",
+      "LLMs",
+      "RAG",
+      "Chain-of-thought",
+      "AI safety"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-karpathy-neural-networks-zero-to-hero",
+    "title": "Neural Networks: Zero to Hero (YouTube playlist)",
+    "provider": "YouTube - Andrej Karpathy",
+    "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+    "description": "Code-along lecture series that builds neural networks from scratch, from backpropagation through language models up to a GPT-style transformer. Aimed at engineers and data scientists who want to understand how modern LLMs actually work.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "ML Engineer",
+      "Data Scientist",
+      "Software Engineer"
+    ],
+    "level": "Advanced",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Roughly 15-20 hours of video",
+    "prerequisites": "Solid Python and basic calculus",
+    "tags": [
+      "Neural networks",
+      "Transformers",
+      "GPT",
+      "Backpropagation",
+      "Deep learning"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-gh900-github-foundations",
+    "title": "GitHub Foundations (Exam GH-900)",
+    "provider": "GitHub / Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-foundations/",
+    "description": "Entry-level credential that proves you understand Git, repositories, pull-request collaboration, project boards, security features and the wider GitHub community. A good first milestone for developers, testers and non-developers who work in GitHub every day.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Front-end Developer",
+      "Back-end Developer",
+      "DevOps Engineer",
+      "QA / Test Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Proctored exam fee (approx. US$99, varies by country); free practice assessment and study guide; no renewal required",
+    "outcome": "Certification",
+    "duration": "~15-25 hours of preparation; 100-minute exam",
+    "prerequisites": "None; some hands-on use of GitHub is recommended",
+    "tags": [
+      "GitHub",
+      "Git",
+      "Fundamentals",
+      "GH-900"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-gh200-github-actions",
+    "title": "GitHub Actions (Exam GH-200)",
+    "provider": "GitHub / Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/github-actions/",
+    "description": "Validates the ability to design, secure and troubleshoot CI/CD workflows with GitHub Actions, including writing custom actions and managing Actions at organisation scale. Suits engineers who automate build, test and release pipelines.",
+    "skillAreas": [
+      "software-development",
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "DevOps Engineer",
+      "Software Engineer",
+      "Back-end Developer",
+      "QA / Test Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Proctored exam fee (approx. US$99, varies by country); free practice assessment; valid for 2 years",
+    "outcome": "Certification",
+    "duration": "~20-30 hours of preparation; 100-minute exam",
+    "prerequisites": "Working knowledge of Git/GitHub and basic CI/CD concepts",
+    "tags": [
+      "GitHub Actions",
+      "CI/CD",
+      "DevOps",
+      "Automation",
+      "GH-200"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-istqb-ctfl-tester-foundation",
+    "title": "ISTQB Certified Tester Foundation Level (CTFL v4.0)",
+    "provider": "ISTQB",
+    "url": "https://www.istqb.org/certifications/certified-tester-foundation-level",
+    "description": "The most widely recognised software-testing qualification, covering test fundamentals, testing across the lifecycle, static testing, test design techniques, test management and tooling. Ideal for testers, QA engineers and developers who want a shared testing vocabulary.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "QA / Test Engineer",
+      "Software Engineer",
+      "Front-end Developer",
+      "Back-end Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Exam fee set by national ISTQB board / exam provider and varies by country; syllabus is free to download; optional paid training courses",
+    "outcome": "Certification",
+    "duration": "~30-40 hours of preparation; 60-minute, 40-question exam",
+    "prerequisites": "None",
+    "tags": [
+      "Testing",
+      "QA",
+      "ISTQB",
+      "Fundamentals"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-coursera-meta-front-end-developer",
+    "title": "Meta Front-End Developer Professional Certificate",
+    "provider": "Coursera (Meta)",
+    "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer",
+    "description": "Nine-course programme from Meta covering HTML, CSS, JavaScript, React, version control, UX basics and a capstone project, finishing with a shareable Coursera certificate. Suits career-changers or upskillers who prefer a guided, video-led path with graded work.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "Front-end Developer",
+      "Software Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription (7-day free trial, then monthly fee; courses can be audited free without the certificate)",
+    "outcome": "Completion certificate",
+    "duration": "~227 hours; about 4-7 months at 6-10 hrs/week",
+    "prerequisites": "None",
+    "tags": [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Coursera",
+      "Front-end"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-the-odin-project",
+    "title": "The Odin Project - Full Stack Web Development",
+    "provider": "The Odin Project",
+    "url": "https://www.theodinproject.com/",
+    "description": "Open-source, project-based curriculum that takes you from HTML and CSS through JavaScript, React, Node.js and databases while you build a portfolio. Best for self-motivated beginners who want a structured full-stack route without paying.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Front-end Developer",
+      "Back-end Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "Free, community-funded; no certificate is issued",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; typically several months at 10-15 hrs/week",
+    "prerequisites": "None",
+    "tags": [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "React",
+      "Web development"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-github-skills",
+    "title": "GitHub Skills",
+    "provider": "GitHub",
+    "url": "https://skills.github.com/",
+    "description": "Short, hands-on courses that run inside your own GitHub repository and give feedback via GitHub Actions, covering pull requests, merge conflicts, Pages, Actions, Copilot and more. Great for learning real GitHub workflows by doing.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Front-end Developer",
+      "Back-end Developer",
+      "DevOps Engineer",
+      "QA / Test Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free on public repositories; no certificate is issued",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; most courses take 30-60 minutes each",
+    "prerequisites": "A free GitHub account",
+    "tags": [
+      "GitHub",
+      "Git",
+      "Pull requests",
+      "GitHub Actions",
+      "Hands-on"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-mslearn-csharp-first-code",
+    "title": "Write your first code using C# (Get started with C#, Part 1)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/",
+    "description": "Four short modules that introduce C# syntax, variables, basic maths and if/else decision logic using in-browser exercises. A friendly starting point for anyone heading into .NET back-end development.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Back-end Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "Free; earns Microsoft Learn achievement badges, not a certification",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (4 modules)",
+    "prerequisites": "None",
+    "tags": [
+      "C#",
+      ".NET",
+      "Microsoft Learn",
+      "Programming basics"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-mdn-learn-web-development",
+    "title": "Learn web development (MDN Web Docs)",
+    "provider": "Mozilla MDN Web Docs",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "description": "Mozilla's structured guide to the core front-end skills: HTML, CSS layout, JavaScript, accessibility, version control and an introduction to frameworks, with extension modules on async code, testing and server-side work. A reliable reference to keep bookmarked at any level.",
+    "skillAreas": [
+      "software-development"
+    ],
+    "roles": [
+      "Front-end Developer",
+      "Software Engineer",
+      "Back-end Developer",
+      "QA / Test Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "Free; no certificate",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "None",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Accessibility",
+      "Web standards"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "dev-owasp-cheat-sheet-series",
+    "title": "OWASP Cheat Sheet Series",
+    "provider": "OWASP Foundation",
+    "url": "https://cheatsheetseries.owasp.org/",
+    "description": "Concise, practitioner-written guides on secure coding topics such as authentication, session management, input validation, injection and XSS prevention, plus framework-specific advice for .NET, Node.js, Docker and Kubernetes. Handy for code reviews and secure design discussions.",
+    "skillAreas": [
+      "software-development",
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Back-end Developer",
+      "Front-end Developer",
+      "QA / Test Engineer",
+      "Security Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "Free, open-source; no certificate",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reference",
+    "prerequisites": "Working knowledge of at least one programming language",
+    "tags": [
+      "Secure coding",
+      "OWASP",
+      "Application security",
+      "Best practices"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-az900-azure-fundamentals",
+    "title": "Microsoft Certified: Azure Fundamentals (Exam AZ-900)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/",
+    "description": "Entry-level Microsoft credential covering cloud concepts, core Azure compute, networking and storage services, and Azure management and governance. The usual starting point for anyone in IT, business or development who will work with Azure.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "DevOps Engineer",
+      "Security Engineer",
+      "Solutions Architect"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free learning paths and practice assessment; proctored exam approx. US$99 (varies by country)",
+    "outcome": "Certification",
+    "duration": "~10-20 hours of preparation; 45-minute exam",
+    "prerequisites": "None; basic IT familiarity helps",
+    "tags": [
+      "Azure",
+      "Fundamentals",
+      "AZ-900",
+      "Cloud concepts"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-az104-azure-administrator",
+    "title": "Microsoft Certified: Azure Administrator Associate (Exam AZ-104)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/",
+    "description": "Role-based associate credential for people who deploy and run Azure environments, spanning identity and governance, storage, compute, virtual networking and monitoring. A core certification for cloud and infrastructure engineers on a Microsoft stack.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "DevOps Engineer",
+      "Security Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free learning paths and practice assessment; proctored exam approx. US$165 (varies by country); free annual online renewal",
+    "outcome": "Certification",
+    "duration": "~40-60 hours of preparation; 100-minute exam",
+    "prerequisites": "Experience with PowerShell or Azure CLI, networking, virtualisation and Microsoft Entra ID",
+    "tags": [
+      "Azure",
+      "Administration",
+      "AZ-104",
+      "Networking",
+      "Identity"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-az305-azure-solutions-architect",
+    "title": "Microsoft Certified: Azure Solutions Architect Expert (Exam AZ-305)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/",
+    "description": "Expert-level credential on designing Azure solutions for identity, governance, data storage, business continuity and infrastructure, aligned to the Well-Architected and Cloud Adoption frameworks. Aimed at experienced architects and senior engineers turning business needs into designs.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Solutions Architect",
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "Security Engineer"
+    ],
+    "level": "Advanced",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Free learning paths and practice assessment; exam approx. US$165 (varies by country); requires Azure Administrator Associate first; free annual online renewal",
+    "outcome": "Certification",
+    "duration": "~40-60 hours of preparation; 100-minute exam",
+    "prerequisites": "Azure Administrator Associate certification (AZ-104) and experience in Azure administration, development and DevOps",
+    "tags": [
+      "Azure",
+      "Architecture",
+      "AZ-305",
+      "Well-Architected"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-coursera-aws-cloud-solutions-architect",
+    "title": "AWS Cloud Solutions Architect Professional Certificate",
+    "provider": "Coursera (Amazon Web Services)",
+    "url": "https://www.coursera.org/specializations/aws-cloud-solutions-architect",
+    "description": "Four-course AWS-authored programme on designing and building cloud solutions on AWS, ending in a shareable Coursera certificate and helping prepare for the Solutions Architect Associate exam. Useful for engineers who want structured AWS architecture training alongside their Azure skills.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Solutions Architect",
+      "Cloud Engineer",
+      "Infrastructure Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription (monthly fee, free trial may apply); the AWS Solutions Architect Associate exam (approx. US$150) is a separate purchase",
+    "outcome": "Completion certificate",
+    "duration": "~2 months at 10 hrs/week (about 62 hours)",
+    "prerequisites": "Basic IT and cloud familiarity",
+    "tags": [
+      "AWS",
+      "Architecture",
+      "Coursera",
+      "Solutions Architect"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-mslearn-terraform-fundamentals-azure",
+    "title": "Fundamentals of Terraform on Azure",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/terraform-fundamentals/",
+    "description": "Introduces infrastructure as code with Terraform on Azure: declarative syntax, variables, outputs, loops and reusable modules, with Azure CLI and VS Code exercises. A practical first step for engineers who want repeatable, version-controlled deployments.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "DevOps Engineer",
+      "Solutions Architect"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "Free on Microsoft Learn; an Azure subscription (free trial available) is useful for the hands-on work",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; a few hours",
+    "prerequisites": "Familiarity with Azure resources and resource groups is recommended, not required",
+    "tags": [
+      "Terraform",
+      "Infrastructure as Code",
+      "Azure",
+      "IaC"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-aws-cloud-practitioner-essentials",
+    "title": "AWS Cloud Practitioner Essentials",
+    "provider": "AWS Skill Builder",
+    "url": "https://aws.amazon.com/training/course-descriptions/cloud-practitioner-essentials/",
+    "description": "AWS's free self-paced introduction to cloud concepts, core AWS services, security, pricing and support, built to prepare learners for the Cloud Practitioner exam. Useful for anyone who needs a broad grounding in AWS before working with it, whatever their technical role.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "DevOps Engineer",
+      "Security Engineer",
+      "Solutions Architect"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free digital course with a free AWS Skill Builder account (hands-on labs and the Cloud Practitioner exam, approx. US$100, are separate); no certificate for the course itself",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; roughly 6-13 hours depending on edition",
+    "prerequisites": "None",
+    "tags": [
+      "AWS",
+      "Fundamentals",
+      "Cloud concepts",
+      "Skill Builder"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-lf-intro-to-kubernetes-lfs158",
+    "title": "Introduction to Kubernetes (LFS158)",
+    "provider": "Linux Foundation",
+    "url": "https://training.linuxfoundation.org/training/introduction-to-kubernetes/",
+    "description": "Free course explaining Kubernetes architecture, core building blocks such as Pods, Services, volumes, ConfigMaps and Ingress, and how to run a local cluster with Minikube. A solid foundation before moving to CKA-style hands-on work.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "DevOps Engineer",
+      "Solutions Architect"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free with a Linux Foundation account; 90-day access; a digital badge is available but it is not a certification",
+    "outcome": "Knowledge",
+    "duration": "~15-20 hours, self-paced",
+    "prerequisites": "Some Linux administration knowledge helps but is not required",
+    "tags": [
+      "Kubernetes",
+      "Containers",
+      "Linux Foundation",
+      "Cloud native"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-youtube-techworld-with-nana",
+    "title": "TechWorld with Nana (YouTube channel)",
+    "provider": "YouTube - TechWorld with Nana",
+    "url": "https://www.youtube.com/@TechWorldwithNana",
+    "description": "Well-known channel by Nana Janashia with clear walkthroughs of Docker, Kubernetes, CI/CD, Terraform and wider DevOps topics, including long full-course videos. Good for visual learners who want practical explanations to complement formal study.",
+    "skillAreas": [
+      "cloud-infrastructure",
+      "software-development"
+    ],
+    "roles": [
+      "DevOps Engineer",
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "Software Engineer"
+    ],
+    "level": "Beginner",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "Free on YouTube; paid bootcamps and courses are offered separately by the creator",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; many videos from 15 minutes to several hours",
+    "prerequisites": "None",
+    "tags": [
+      "DevOps",
+      "Kubernetes",
+      "Docker",
+      "CI/CD",
+      "Terraform",
+      "YouTube"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "cloud-azure-architecture-center",
+    "title": "Azure Architecture Center",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/",
+    "description": "Microsoft's library of reference architectures, design patterns, technology decision guides and example workloads aligned to the Well-Architected and Cloud Adoption frameworks. An essential reference for designing secure, resilient Azure solutions.",
+    "skillAreas": [
+      "cloud-infrastructure"
+    ],
+    "roles": [
+      "Solutions Architect",
+      "Cloud Engineer",
+      "Infrastructure Engineer",
+      "Security Engineer",
+      "DevOps Engineer"
+    ],
+    "level": "Advanced",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "Free documentation; no certificate",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reference",
+    "prerequisites": "Working knowledge of core Azure services",
+    "tags": [
+      "Azure",
+      "Architecture",
+      "Design patterns",
+      "Well-Architected",
+      "Reference"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-pmp-certification",
+    "title": "Project Management Professional (PMP)",
+    "provider": "PMI",
+    "url": "https://www.pmi.org/certifications/project-management-pmp",
+    "description": "The global benchmark credential for people who lead projects, covering predictive, agile and hybrid delivery across people, process and business-environment domains. Suits experienced project and delivery managers who want a widely recognised professional credential.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Project Manager",
+      "Delivery Manager"
+    ],
+    "level": "Advanced",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Exam fee roughly US$400-575 depending on PMI membership, plus required 35-hour training course; confirm current fees on pmi.org",
+    "outcome": "Certification",
+    "duration": "Typically 2-4 months of preparation; exam is 180 questions in 240 minutes",
+    "prerequisites": "Several years of experience leading projects (varies by education level) plus 35 hours of project management education, or a CAPM certification",
+    "tags": [
+      "PMP",
+      "Project Management",
+      "Agile",
+      "Hybrid",
+      "PMI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-capm-certification",
+    "title": "Certified Associate in Project Management (CAPM)",
+    "provider": "PMI",
+    "url": "https://www.pmi.org/certifications/certified-associate-capm",
+    "description": "PMI's entry-level credential that proves you understand project management fundamentals, predictive and agile approaches and business analysis. A good first step for project coordinators, junior project managers and career changers.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Project Manager",
+      "Business Analyst",
+      "Delivery Manager"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Exam fee roughly US$225-300 depending on PMI membership, plus 23 hours of education if not already completed; confirm on pmi.org",
+    "outcome": "Certification",
+    "duration": "Exam is 150 questions in 3 hours; allow 4-8 weeks of preparation",
+    "prerequisites": "Secondary school diploma or equivalent and 23 hours of project management education before the exam",
+    "tags": [
+      "CAPM",
+      "Project Management",
+      "PMI",
+      "Entry level"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-psm-i-certification",
+    "title": "Professional Scrum Master I (PSM I)",
+    "provider": "Scrum.org",
+    "url": "https://www.scrum.org/assessments/professional-scrum-master-i-certification",
+    "description": "An online assessment validating your understanding of the Scrum framework and the Scrum Master accountabilities. Well suited to Scrum Masters, delivery leads and team members who want a respected, lifetime credential.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Scrum Master",
+      "Project Manager",
+      "Delivery Manager",
+      "Product Owner"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Assessment US$200 per attempt; optional Scrum.org training courses cost extra",
+    "outcome": "Certification",
+    "duration": "Self-study then a 60-minute, 80-question online assessment (85% pass mark)",
+    "prerequisites": "None formally; working knowledge of the Scrum Guide is expected",
+    "tags": [
+      "Scrum",
+      "Agile",
+      "Scrum Master",
+      "Scrum.org"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-google-project-management-certificate",
+    "title": "Google Project Management Professional Certificate",
+    "provider": "Coursera (Google)",
+    "url": "https://www.coursera.org/professional-certificates/google-project-management",
+    "description": "A seven-course programme covering project initiation, planning, risk, execution, agile and Scrum, with a hands-on capstone. Suits beginners moving into project coordination or management, and counts towards the education hours needed for PMI's CAPM.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Project Manager",
+      "Delivery Manager",
+      "Scrum Master"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription, about US$49 per month after a 7-day trial in the US/Canada; included with Coursera Plus",
+    "outcome": "Completion certificate",
+    "duration": "~140 hours; about 6 months at 10 hours per week",
+    "prerequisites": "No prior experience or degree required",
+    "tags": [
+      "Project Management",
+      "Agile",
+      "Scrum",
+      "Google",
+      "Coursera"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-openlearn-project-management-start",
+    "title": "Project management: the start of the project journey",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey/content-section-0",
+    "description": "A free taster of postgraduate study that explains what projects are, how they begin, feasibility and decision-making, project life cycles and the project manager's main tasks. Useful for newcomers who want a solid grounding before choosing a methodology or certification.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Project Manager",
+      "Business Analyst",
+      "Delivery Manager"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free statement of participation on completion",
+    "outcome": "Knowledge",
+    "duration": "~35 hours, self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Project Management",
+      "Project Lifecycle",
+      "Feasibility",
+      "OpenLearn"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-openlearn-project-governance-pmo",
+    "title": "Project governance and Project Management Office (PMO)",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/money-business/project-governance-and-project-management-office-pmo/content-section-0",
+    "description": "A short free course on how governance works around projects, the roles of boards, sponsors and managers, and how different kinds of PMO are set up. Helpful for delivery managers and anyone working with or building a PMO.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Project Manager",
+      "Delivery Manager"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free statement of participation on completion",
+    "outcome": "Knowledge",
+    "duration": "~7 hours, self-paced",
+    "prerequisites": "Basic familiarity with project work is helpful",
+    "tags": [
+      "PMO",
+      "Governance",
+      "Project Management",
+      "OpenLearn"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-coursera-foundations-of-project-management",
+    "title": "Foundations of Project Management",
+    "provider": "Coursera (Google)",
+    "url": "https://www.coursera.org/learn/project-management-foundations",
+    "description": "The first course of the Google Project Management certificate, introducing project roles, methodologies, project life cycles and the day-to-day work of a project manager. A friendly starting point for anyone with no prior experience.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Project Manager",
+      "Delivery Manager",
+      "Product Owner"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free to start; the graded certificate experience needs a Coursera subscription (availability of no-certificate access may vary)",
+    "outcome": "Knowledge",
+    "duration": "~12 hours, self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Project Management",
+      "Beginner",
+      "Google",
+      "Coursera"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-scrum-guide",
+    "title": "The 2020 Scrum Guide",
+    "provider": "Scrum Guides (Ken Schwaber and Jeff Sutherland)",
+    "url": "https://scrumguides.org/scrum-guide.html",
+    "description": "The official, short definition of Scrum covering the theory, values, team accountabilities, events and artifacts. Essential reading for anyone working in or alongside Scrum teams, and the main source for Scrum.org and Scrum Alliance exams.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Scrum Master",
+      "Product Owner",
+      "Project Manager",
+      "Business Analyst",
+      "Delivery Manager"
+    ],
+    "level": "Beginner",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; roughly a 30-minute read",
+    "prerequisites": "",
+    "tags": [
+      "Scrum",
+      "Agile",
+      "Scrum Guide"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-atlassian-agile-coach",
+    "title": "The Agile Coach",
+    "provider": "Atlassian",
+    "url": "https://www.atlassian.com/agile",
+    "description": "A free library of practical articles and tutorials on agile, Scrum, Kanban, backlogs, sprints and how to run them in Jira. Ideal for teams new to agile ways of working or choosing between frameworks.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Scrum Master",
+      "Product Owner",
+      "Project Manager",
+      "Delivery Manager"
+    ],
+    "level": "Beginner",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Agile",
+      "Scrum",
+      "Kanban",
+      "Jira"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "pm-lennys-podcast",
+    "title": "Lenny's Podcast",
+    "provider": "YouTube - Lenny Rachitsky",
+    "url": "https://www.youtube.com/@LennysPodcast",
+    "description": "Long-form interviews with leading product and growth people on how they build, prioritise and lead products. Best for product managers and product owners who want real-world practice and career insight.",
+    "skillAreas": [
+      "project-product-management"
+    ],
+    "roles": [
+      "Product Manager",
+      "Product Owner"
+    ],
+    "level": "Intermediate",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "Also available on podcast apps",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; episodes typically 60-90 minutes",
+    "prerequisites": "",
+    "tags": [
+      "Product Management",
+      "Podcast",
+      "Product Strategy",
+      "Career"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-cmi-level-3-management",
+    "title": "CMI Level 3 Diploma in Management (Combined)",
+    "provider": "Chartered Management Institute (CMI)",
+    "url": "https://www.managers.org.uk/education-and-learning/qualifications/qualification-library/level-3-management-combined/",
+    "description": "A UK-regulated qualification for supervisors and first-line managers, covering leading and managing individuals and teams. A good route for new team leads who want a formal, recognised management qualification.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "Team Lead",
+      "Manager"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Fees set by CMI-approved training centres; contact a centre for current prices",
+    "outcome": "Certification",
+    "duration": "550 hours total qualification time; pace set by the training centre",
+    "prerequisites": "Typically a supervisory or team-leading role; delivered through an approved centre",
+    "tags": [
+      "CMI",
+      "Management",
+      "Team Leader",
+      "UK qualification"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-cmi-level-5-management-leadership",
+    "title": "CMI Level 5 Management and Leadership (Award, Certificate, Diploma)",
+    "provider": "Chartered Management Institute (CMI)",
+    "url": "https://www.managers.org.uk/education-and-learning/qualifications/qualification-library/level-5-management-and-leadership/",
+    "description": "CMI's benchmark qualification for middle managers, with Award, Certificate, Diploma and Extended Diploma sizes. Suits practising or aspiring department and operations managers and is a stepping stone towards Chartered Manager status.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "Manager",
+      "Senior Leader"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Fees set by CMI-approved training centres; contact a centre for current prices",
+    "outcome": "Certification",
+    "duration": "Award 40, Certificate 130, Diploma 370 hours total qualification time; pace set by the centre",
+    "prerequisites": "Management experience or an aspiring manager role; delivered through an approved centre",
+    "tags": [
+      "CMI",
+      "Management",
+      "Leadership",
+      "Chartered Manager",
+      "UK qualification"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-ilm-level-7-strategic-leadership",
+    "title": "ILM Level 7 Strategic Leadership and Management",
+    "provider": "ILM (City & Guilds)",
+    "url": "https://www.i-l-m.com/learning-and-development/leadership-and-management-qualifications",
+    "description": "A postgraduate-level ILM qualification for senior leaders preparing for or working in executive roles, covering organisational strategy, innovation and performance. The ILM page also lists the Level 3 and Level 5 routes for earlier-career managers.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "Senior Leader",
+      "Manager"
+    ],
+    "level": "Advanced",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Fees set by ILM-approved training providers; contact a provider for current prices",
+    "outcome": "Certification",
+    "duration": "Varies by training provider",
+    "prerequisites": "Senior management or executive-level responsibility is expected; delivered through an approved ILM centre",
+    "tags": [
+      "ILM",
+      "Strategic Leadership",
+      "Senior Leader",
+      "City & Guilds"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-coursera-leading-people-and-teams",
+    "title": "Leading People and Teams Specialization",
+    "provider": "Coursera (University of Michigan)",
+    "url": "https://www.coursera.org/specializations/leading-teams",
+    "description": "A five-course specialisation on inspiring and motivating individuals, managing talent, influencing others and leading teams, finishing with a capstone project. Suits new and aspiring managers who want structured, certificated learning.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "Team Lead",
+      "Manager"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription or Coursera Plus; financial aid may be available",
+    "outcome": "Completion certificate",
+    "duration": "~56 hours; about 4-6 months at a few hours per week",
+    "prerequisites": "No prior experience required",
+    "tags": [
+      "Leadership",
+      "Team Management",
+      "Motivation",
+      "Coursera"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-openlearn-leadership-and-followership",
+    "title": "Leadership and followership",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/education-development/learning/leadership-and-followership/content-section-overview",
+    "description": "An eight-week free course on leadership styles, key leadership skills, common mistakes and how leaders grow their followers, including a week on emotional intelligence. Good for anyone who wants to understand leadership, not just people with a title.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "All employees",
+      "Team Lead",
+      "Manager"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free statement of participation and free digital badge on completion",
+    "outcome": "Knowledge",
+    "duration": "~24 hours over 8 weeks (about 3 hours per week)",
+    "prerequisites": "",
+    "tags": [
+      "Leadership",
+      "Emotional Intelligence",
+      "Followership",
+      "OpenLearn"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-openlearn-effective-communication",
+    "title": "Effective communication in the workplace",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace",
+    "description": "A free eight-week course on verbal, non-verbal and written communication, handling difficult conversations and feedback, and managing your own emotions at work. Suits every employee looking to communicate more clearly and confidently.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "All employees",
+      "Team Lead",
+      "Manager"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free statement of participation and free digital badge on completion",
+    "outcome": "Knowledge",
+    "duration": "~24 hours over 8 weeks",
+    "prerequisites": "",
+    "tags": [
+      "Communication",
+      "Feedback",
+      "Emotional Intelligence",
+      "OpenLearn"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-openlearn-talk-the-talk",
+    "title": "Talk the talk",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/education-development/talk-the-talk",
+    "description": "A free course that teaches how to plan, structure and deliver a persuasive talk by analysing real examples and then building your own. Handy for anyone preparing presentations to colleagues, clients or leadership.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "All employees",
+      "Team Lead",
+      "Manager"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free statement of participation on completion",
+    "outcome": "Knowledge",
+    "duration": "~12 hours, self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Presentation Skills",
+      "Public Speaking",
+      "Communication",
+      "OpenLearn"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-ted-how-great-leaders-inspire-action",
+    "title": "How great leaders inspire action",
+    "provider": "TED (Simon Sinek)",
+    "url": "https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action",
+    "description": "A short talk introducing the 'Golden Circle' idea that inspiring leaders start with why before how and what. A quick, memorable primer on purpose-led leadership for managers and teams.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "All employees",
+      "Team Lead",
+      "Manager",
+      "Senior Leader"
+    ],
+    "level": "Beginner",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "~18 minutes",
+    "prerequisites": "",
+    "tags": [
+      "Leadership",
+      "Purpose",
+      "Inspiration",
+      "TED"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-ted-how-to-speak-so-people-want-to-listen",
+    "title": "How to speak so that people want to listen",
+    "provider": "TED (Julian Treasure)",
+    "url": "https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen",
+    "description": "A sound expert shares practical habits to avoid and vocal exercises to try so that your speaking is clearer and more engaging. Useful for anyone who presents, runs meetings or gives feedback.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "All employees",
+      "Team Lead",
+      "Manager",
+      "Senior Leader"
+    ],
+    "level": "Beginner",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "~10 minutes",
+    "prerequisites": "",
+    "tags": [
+      "Communication",
+      "Presentation Skills",
+      "Public Speaking",
+      "TED"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "lead-rework-coach-using-grow-model",
+    "title": "Coach using the GROW model",
+    "provider": "Google re:Work",
+    "url": "https://rework.withgoogle.com/intl/en/guides/coach-using-the-grow-model",
+    "description": "A concise guide to structuring coaching conversations with the Goal, Reality, Options, Will framework, with tips on regular 1:1s, active listening and balanced feedback. Aimed at managers and team leads who coach their direct reports.",
+    "skillAreas": [
+      "leadership-soft-skills"
+    ],
+    "roles": [
+      "Team Lead",
+      "Manager",
+      "Senior Leader"
+    ],
+    "level": "Intermediate",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced; roughly a 15-minute read",
+    "prerequisites": "",
+    "tags": [
+      "Coaching",
+      "GROW Model",
+      "1:1s",
+      "Feedback"
+    ],
+    "lastReviewed": "2026-10-20"
+  }
+]
