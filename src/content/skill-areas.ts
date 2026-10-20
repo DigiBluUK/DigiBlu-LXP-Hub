@@ -20,6 +20,21 @@ export const SKILL_AREAS: SkillArea[] = [
     roles: ["All employees", "Business User", "Data Scientist", "ML Engineer", "Software Engineer"],
   },
   {
+    id: "automation-low-code",
+    name: "Automation & Low-Code",
+    summary: "Power Automate, the Power Platform and RPA - automating everyday processes.",
+    description:
+      "Automate processes with Microsoft Power Automate and the wider Power Platform: cloud flows, desktop flows (RPA), approvals, AI Builder and Copilot Studio, and the governance that keeps automation safe as it grows.",
+    roles: [
+      "Business User",
+      "Business Analyst",
+      "Automation Developer",
+      "RPA Developer",
+      "Power Platform Developer",
+      "Solution Architect",
+    ],
+  },
+  {
     id: "software-development",
     name: "Software Development",
     summary: "Modern web development, core languages, Git and testing.",

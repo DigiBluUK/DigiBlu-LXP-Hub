@@ -15,12 +15,14 @@ npm run dev
 
 Then open http://localhost:3000.
 
-`npm run build` produces a static site in `out/` that any static web host can serve.
+`npm run build` produces a static site in `out/` that any static web host can serve. A post-build step ([`scripts/flatten-prefetch.mjs`](scripts/flatten-prefetch.mjs)) fixes a Next.js 16.4 naming mismatch so link prefetching works on static hosts; always build with `npm run build`, not `next build` directly.
+
+The hub installs like an app (Add to Home Screen on phones, Install in Edge or Chrome) and opens previously visited pages offline. The manifest is [`src/app/manifest.ts`](src/app/manifest.ts) and the service worker [`public/sw.js`](public/sw.js): pages are fetched from the network first, so a new release shows as soon as someone is online.
 
 ## Hosting
 
 - **Now (temporary):** GitHub Pages. Every push to `main` runs [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml), which builds with `PAGES_BASE_PATH=/<repository name>` (Pages serves project sites from a sub-folder) and publishes `out/`.
-- **Launch:** Cloudflare, as for the DigiBlu website, behind DigiBlu sign-in (Cloudflare Access). Build without `PAGES_BASE_PATH`. The hub is for DigiBlu employees only, so every page keeps `noindex`; leave `ALLOW_INDEXING` unset.
+- **Launch:** Cloudflare, as for the DigiBlu website, behind DigiBlu sign-in (Cloudflare Access). Build without `PAGES_BASE_PATH`. The hub is for DigiBlu employees only, so every page carries `noindex`.
 
 Until the hub sits behind sign-in, this repository and the Pages link are public: add only public course information, never names or internal material.
 
@@ -34,7 +36,7 @@ All course content lives in one file: [`src/content/courses.json`](src/content/c
 |---|---|
 | `id` | Permanent, lower-case words joined by hyphens, e.g. `data-pl300-power-bi-data-analyst`. **Never change or reuse an id**: saved lists point at it. |
 | `title`, `provider`, `url`, `description` | The basics. `url` must start with `https://`. |
-| `skillAreas` | One or more of `data-analytics`, `ai`, `software-development`, `cloud-infrastructure`, `project-product-management`, `leadership-soft-skills`. The first is its main area. |
+| `skillAreas` | One or more of `data-analytics`, `ai`, `automation-low-code`, `software-development`, `cloud-infrastructure`, `project-product-management`, `leadership-soft-skills`. The first is its main area. |
 | `roles` | Who it suits, using the role names in [`src/content/skill-areas.ts`](src/content/skill-areas.ts). |
 | `level` | `Beginner`, `Intermediate` or `Advanced` |
 | `format` | `Online course`, `Learning path`, `Video`, `Guide` or `Book` |

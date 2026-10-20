@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { ScrollTop } from "@/components/ScrollTop";
+import { ServiceWorker } from "@/components/ServiceWorker";
 import { SiteHeader } from "@/components/SiteHeader";
 import { STATS } from "@/lib/catalogue";
 import { THEME_INIT } from "@/lib/theme";
@@ -14,19 +15,30 @@ const dmSans = localFont({
 });
 
 // Favicons come from the file conventions in this folder (favicon.ico, icon.svg,
-// apple-icon.png). Search engines are kept out until launch: set ALLOW_INDEXING=true
-// on the production build when the hub goes live.
+// apple-icon.png) and the installed-app icons from manifest.ts. The hub is for
+// DigiBlu employees only, so search engines are always kept out.
 export const metadata: Metadata = {
   title: {
     default: "DigiBlu Learning Experience Knowledge Hub",
     template: "%s · DigiBlu Knowledge Hub",
   },
   description:
-    "A curated guide to courses, certifications and free learning for everyone at DigiBlu, organised by skill area.",
-  robots: process.env.ALLOW_INDEXING === "true" ? undefined : { index: false, follow: false },
+    "Courses, certifications and free learning for everyone at DigiBlu, organised by skill area and role.",
+  robots: { index: false, follow: false },
+  appleWebApp: { capable: true, title: "Knowledge Hub", statusBarStyle: "black-translucent" },
+  formatDetection: { telephone: false },
 };
 
-export const viewport: Viewport = { themeColor: "#000000" };
+// viewportFit "cover" lets the installed app use the full screen; the CSS keeps
+// content clear of notches and the home indicator with env(safe-area-inset-*).
+// SiteHeader keeps theme-color in step with the theme in use.
+export const viewport: Viewport = {
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+};
 
 const reviewed = new Date(`${STATS.lastReviewed}T00:00:00`).toLocaleDateString("en-GB", {
   day: "numeric",
@@ -59,6 +71,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </div>
         </footer>
         <ScrollTop />
+        <ServiceWorker />
       </body>
     </html>
   );

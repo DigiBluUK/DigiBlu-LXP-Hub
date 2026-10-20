@@ -8,7 +8,7 @@ import { COURSES, STATS } from "@/lib/catalogue";
 import { OUTCOMES } from "@/lib/types";
 
 // Example searches, not a popularity ranking: the hub keeps no usage data.
-const SUGGESTIONS = ["Power BI", "Copilot", "Azure", "Scrum", "Leadership"];
+const SUGGESTIONS = ["Power BI", "Power Automate", "Copilot", "Azure", "Scrum"];
 
 const ROADMAP = [
   {
@@ -62,7 +62,9 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="stats mt-16">
+          <ProviderStrip />
+
+          <div className="stats mt-12">
             {[
               [STATS.total, "learning resources"],
               [STATS.areas, "skill areas"],
@@ -75,8 +77,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
-          <ProviderStrip />
         </div>
       </section>
 

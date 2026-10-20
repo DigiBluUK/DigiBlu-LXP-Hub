@@ -88,6 +88,14 @@ export function SiteHeader() {
   const themeLabel = theme === "light" ? "Switch to dark mode" : "Switch to light mode";
   const closeMenu = () => setMenuOpen(false);
 
+  // The browser and installed-app chrome (address bar, status bar, title bar)
+  // follow the theme in use, including an explicit choice made here.
+  useEffect(() => {
+    document
+      .querySelectorAll('meta[name="theme-color"]')
+      .forEach((meta) => meta.setAttribute("content", theme === "light" ? "#ffffff" : "#000000"));
+  }, [theme]);
+
   // Pages pad their top by the bar's real height (--nav-h), so measure it
   // rather than guess: a mismatch hides content under the bar or leaves a gap.
   useEffect(() => {

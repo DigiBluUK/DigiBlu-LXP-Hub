@@ -714,6 +714,725 @@
     "lastReviewed": "2026-10-20"
   },
   {
+    "id": "auto-ms-pl900-power-platform-fundamentals",
+    "title": "Microsoft Certified: Power Platform Fundamentals (Exam PL-900)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/",
+    "description": "Entry-level certification that checks you understand what each Power Platform product does, how Dataverse and environments fit together, and how Power Automate and Copilot Studio agents are used. A sensible first credential for anyone joining an automation project.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Business User",
+      "Business Analyst",
+      "Automation Developer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Free Microsoft Learn prep and practice assessment; exam fee applies (price varies by country, see the exam page)",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 45-minute proctored exam",
+    "prerequisites": "None",
+    "tags": [
+      "Power Platform",
+      "Power Automate",
+      "Copilot Studio",
+      "Fundamentals",
+      "PL-900"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-ab400-power-platform-developer-associate",
+    "title": "Microsoft Certified: Power Platform Developer Associate (Exam AB-400, replaces PL-400)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/",
+    "description": "Developer-level certification for people who extend Power Platform with code, custom connectors, Power Automate expressions, integrations and agentic AI. The exam moved from PL-400 to AB-400 on 16 October 2026, so new candidates should book AB-400.",
+    "skillAreas": [
+      "automation-low-code",
+      "software-development"
+    ],
+    "roles": [
+      "Power Platform Developer",
+      "Automation Developer",
+      "Software Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Exam fee applies (price varies by country, see the exam page); Microsoft Learn training for AB-400 is not yet listed on the credential page, use the official study guide",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; proctored exam",
+    "prerequisites": "Hands-on Power Platform development experience (JavaScript, JSON, TypeScript, C#, REST APIs, Azure)",
+    "tags": [
+      "Power Platform",
+      "Developer",
+      "AB-400",
+      "PL-400",
+      "Power Automate expressions",
+      "Integrations"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-ab620-ai-agent-builder-associate",
+    "title": "Microsoft Certified: AI Agent Builder Associate (Exam AB-620)",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/certifications/ai-agent-builder-associate/",
+    "description": "Associate certification for builders who design and integrate custom agents in Copilot Studio, including multi-agent designs, MCP servers, connectors, computer use and agent testing. The nearest current Microsoft credential to the retired Power Automate RPA exam for AI-led automation work.",
+    "skillAreas": [
+      "automation-low-code",
+      "ai"
+    ],
+    "roles": [
+      "Power Platform Developer",
+      "Automation Developer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Exam fee applies (price varies by country, see the exam page); free study guide and practice assessment on AI Skills Navigator",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; 120-minute proctored exam",
+    "prerequisites": "Experience configuring Copilot Studio agents, plus working knowledge of Power Fx, Dataverse, generative AI concepts and REST APIs",
+    "tags": [
+      "Copilot Studio",
+      "AI agents",
+      "MCP",
+      "AB-620",
+      "Power Platform"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-applied-skill-power-automate-automated-processes",
+    "title": "Microsoft Applied Skills: Create and manage automated processes by using Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/applied-skills/create-and-manage-automated-processes-with-power-automate/",
+    "description": "Hands-on credential where you prove in a timed interactive lab that you can build cloud flow triggers, notification actions, conditional logic, approvals and sharing. A practical, lower-cost way to evidence core Power Automate skills.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Business Analyst",
+      "Business User"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Applied Skills assessments are free; lab can be retaken after a 72-hour wait",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; interactive lab assessment",
+    "prerequisites": "Familiarity with Power Platform and Power Automate",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Approvals",
+      "Applied Skills",
+      "APL-7002"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-applied-skill-enhance-agents-autonomous",
+    "title": "Microsoft Applied Skills: Enhance agents with autonomous capabilities",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/",
+    "description": "Lab-assessed credential covering how to give a Copilot Studio agent knowledge, agent flows as tools, event triggers for autonomous behaviour, and error handling with human hand-off. Good for people linking Power Automate flows to agents.",
+    "skillAreas": [
+      "automation-low-code",
+      "ai"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Power Platform Developer",
+      "Business User"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Applied Skills assessments are free; lab can be retaken after a 72-hour wait",
+    "outcome": "Certification",
+    "duration": "Self-paced prep; interactive lab assessment",
+    "prerequisites": "Experience building basic Copilot Studio agents; working knowledge of Power Automate and Dataverse",
+    "tags": [
+      "Copilot Studio",
+      "Agent flows",
+      "Autonomous agents",
+      "Applied Skills",
+      "AI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-linkedin-learning-power-automate-essential-training",
+    "title": "Microsoft Power Automate Essential Training",
+    "provider": "LinkedIn Learning",
+    "url": "https://www.linkedin.com/learning/microsoft-power-automate-essential-training-26159458",
+    "description": "A concise instructor-led course covering connectors, triggers, actions, conditions and approvals, building flows from templates, mobile flows, and creating and troubleshooting flows with Copilot. Good for staff who want a structured, certificated introduction to cloud flows.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Business User",
+      "Business Analyst",
+      "Automation Developer"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Requires a LinkedIn Learning subscription; a 1-month free trial is offered",
+    "outcome": "Completion certificate",
+    "duration": "~2 hours",
+    "prerequisites": "None",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Copilot",
+      "Approvals"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-udemy-power-automate-desktop-complete-guide",
+    "title": "Power Automate - Complete Guide to Power Automate Desktop",
+    "provider": "Udemy",
+    "url": "https://www.udemy.com/course/power-automate-complete-guide-to-power-automate-desktop/",
+    "description": "A long, hands-on Udemy course dedicated to desktop flows, taking learners from the basics through to building working RPA automations. A good paid option for anyone who needs to automate desktop and legacy applications.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "RPA Developer",
+      "Automation Developer",
+      "Business Analyst"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "One-off Udemy purchase; price varies and is often discounted",
+    "outcome": "Completion certificate",
+    "duration": "~13 hours",
+    "prerequisites": "Windows PC; no prior RPA experience needed",
+    "tags": [
+      "Power Automate",
+      "Desktop flows",
+      "RPA",
+      "Udemy"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-udemy-mastering-microsoft-power-automate-2026",
+    "title": "Mastering Microsoft Power Automate 2026: From Zero to Hero",
+    "provider": "Udemy",
+    "url": "https://www.udemy.com/course/mastering-microsoft-power-automate/",
+    "description": "A broad Udemy course covering the Power Automate interface, connectors, flow types, variables, conditions, loops, HTTP actions and AI integration, built around the newer flow designer. Suits people who want one paid course that spans cloud flows end to end.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Power Platform Developer",
+      "Business Analyst",
+      "Business User"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "One-off Udemy purchase; price varies and is often discounted",
+    "outcome": "Completion certificate",
+    "duration": "~12 hours",
+    "prerequisites": "None",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "AI",
+      "Udemy"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-pragmatic-works-intro-rpa-power-automate-desktop",
+    "title": "Introduction to RPA with Power Automate Desktop",
+    "provider": "Pragmatic Works",
+    "url": "https://pragmaticworks.com/courses/introduction-to-rpa-with-power-automate-desktop",
+    "description": "A 21-module on-demand course on building desktop flows, covering variables, conditions and loops, Excel, web, file and PDF automation, best practice, troubleshooting, and combining desktop flows with cloud flows. Suits newcomers to RPA who want a structured path with a completion certificate.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "RPA Developer",
+      "Automation Developer",
+      "Business Analyst"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Listed on the Pragmatic Works Free Community plan; paid plans also exist, so confirm the certificate is included on the free tier",
+    "outcome": "Completion certificate",
+    "duration": "~5 hours",
+    "prerequisites": "Windows PC with Power Automate for desktop",
+    "tags": [
+      "Power Automate",
+      "Desktop flows",
+      "RPA",
+      "Excel automation"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-lp-demonstrate-power-automate-capabilities",
+    "title": "Demonstrate the capabilities of Microsoft Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/demonstrate-capabilities-microsoft-power-automate/",
+    "description": "Short beginner path introducing cloud and desktop flows, triggers and actions, and then building, testing, monitoring and sharing a first cloud flow. Ideal starting point for non-technical staff.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Business User",
+      "Business Analyst"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (2 modules)",
+    "prerequisites": "None",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Getting started"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-lp-build-optimize-cloud-flows",
+    "title": "Build and optimize cloud flows in Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/build-optimize-cloud-flows-power-automate/",
+    "description": "Beginner path that moves from a first flow into expressions, run-after error handling, HTTP connectors and troubleshooting slow flows. Useful for builders who want their flows to be dependable rather than just working in a demo.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Power Platform Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (5 modules)",
+    "prerequisites": "None",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Expressions",
+      "Error handling",
+      "HTTP connectors",
+      "Troubleshooting"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-lp-create-manage-automated-processes",
+    "title": "Create and Manage Automated Processes by using Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/create-manage-automated-processes-by-using-power-automate/",
+    "description": "Intermediate path on approval flows, flows that manage user information and flows across multiple data sources, ending in a guided project. It is the official preparation route for the matching Applied Skills assessment.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Business User",
+      "Business Analyst",
+      "Automation Developer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (5 modules)",
+    "prerequisites": "Basic Power Platform and Power Automate knowledge",
+    "tags": [
+      "Power Automate",
+      "Approvals",
+      "Dataverse",
+      "Guided project",
+      "Applied Skills prep"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-lp-desktop-flows-rpa",
+    "title": "Desktop flows and Robotic Process Automation in Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/desktop-flows-robotic-process-automation-power-automate/",
+    "description": "Ten-module path on Power Automate for desktop: flow control, variables, parameters, loops, recording, scripting, web automation and exception handling. Suits anyone moving from cloud flows into UI-based RPA.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "RPA Developer",
+      "Automation Developer"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (10 modules)",
+    "prerequisites": "Experience building cloud flows",
+    "tags": [
+      "Power Automate for desktop",
+      "Desktop flows",
+      "RPA",
+      "Exception handling",
+      "Web automation"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-lp-process-mining-getting-started",
+    "title": "Get started with process mining in Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/introduction-process-advisor/",
+    "description": "Beginner path covering the process mining web portal, the Process Mining desktop app and Power BI reporting so you can find bottlenecks before deciding what to automate. Handy for analysts doing discovery work.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Business Analyst",
+      "Business User",
+      "Automation Developer"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "Hands-on exercises need the Power Automate process mining add-on (trial or licence)",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (5 modules)",
+    "prerequisites": "Basic business process knowledge",
+    "tags": [
+      "Process mining",
+      "Power Automate",
+      "Process discovery",
+      "Power BI",
+      "Hyperautomation"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-lp-automate-extend-ai-power-automate",
+    "title": "Automate and Extend Your Solutions with AI in Microsoft Power Automate",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/training/paths/automate-business-processes-power-automate/",
+    "description": "Recently updated path on event-driven cloud flows, Dataverse triggers and actions, approval flows, and AI Builder grounded prompts that answer questions from your own Dataverse data. Good bridge from classic automation into AI-assisted flows.",
+    "skillAreas": [
+      "automation-low-code",
+      "ai"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Power Platform Developer",
+      "Business User"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (4 modules)",
+    "prerequisites": "Completion of the Dataverse data model learning path or equivalent; a Power Automate account",
+    "tags": [
+      "Power Automate",
+      "AI Builder",
+      "Dataverse",
+      "Approvals",
+      "Generative AI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-docs-power-automate-documentation",
+    "title": "Microsoft Power Automate documentation",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/power-automate/",
+    "description": "The official reference hub for cloud flows, desktop flows, process mining, Copilot features, solutions and ALM, administration, connectors and troubleshooting. Worth bookmarking as the first stop when something does not behave as expected.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "RPA Developer",
+      "Power Platform Developer"
+    ],
+    "level": "Beginner",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reference",
+    "prerequisites": "",
+    "tags": [
+      "Power Automate",
+      "Documentation",
+      "Cloud flows",
+      "Desktop flows",
+      "Troubleshooting"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-docs-automation-adoption-best-practices",
+    "title": "Automation adoption best practices overview",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/power-automate/guidance/automation-coe/overview",
+    "description": "Microsoft's guidance for setting up and scaling an Automation Centre of Excellence, with articles on strategy, the HEAT lifecycle, governance, managing Power Automate for desktop at scale and an automation maturity model. Useful when advising clients on roll-out and governance.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Solution Architect",
+      "RPA Developer",
+      "Business Analyst"
+    ],
+    "level": "Intermediate",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reference",
+    "prerequisites": "",
+    "tags": [
+      "Automation CoE",
+      "Governance",
+      "Adoption",
+      "Maturity model",
+      "RPA"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-ms-docs-power-platform-well-architected",
+    "title": "Power Platform Well-Architected",
+    "provider": "Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/power-platform/well-architected/",
+    "description": "Architecture guidance built around five pillars (reliability, security, operational excellence, performance efficiency and experience optimisation), with design checklists and a self-assessment tool. Helps architects review Power Platform and Power Automate workloads before go-live.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Solution Architect",
+      "Power Platform Developer"
+    ],
+    "level": "Advanced",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reference",
+    "prerequisites": "Working Power Platform solution experience",
+    "tags": [
+      "Well-Architected",
+      "Architecture",
+      "Power Platform",
+      "Reliability",
+      "Security",
+      "Governance"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-youtube-reza-dorrani-power-automate-beginners",
+    "title": "Power Automate for Beginners",
+    "provider": "YouTube - Reza Dorrani",
+    "url": "https://www.youtube.com/playlist?list=PLTyFh-qDKAiHscqJBrtIpseDtx5XFgDNk",
+    "description": "A 38-video playlist from a well-known Microsoft Power Platform presenter that walks through building cloud flows step by step, with practical SharePoint, Excel, Forms and approval scenarios. A solid free starting point for business users and new makers.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Business User",
+      "Business Analyst",
+      "Automation Developer",
+      "Power Platform Developer"
+    ],
+    "level": "Beginner",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "38 videos, self-paced",
+    "prerequisites": "Microsoft 365 account with Power Automate access",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Approvals",
+      "SharePoint",
+      "YouTube"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-youtube-damobird365-advanced-cloud-flows",
+    "title": "Power Automate Advanced Tutorial",
+    "provider": "YouTube - DamoBird365",
+    "url": "https://www.youtube.com/playlist?list=PLzq6d1ITy6c3mt9kJQo2JuT1MFm6U35dC",
+    "description": "An 18-video playlist from a UK-based Microsoft solution architect covering the harder parts of cloud flows such as XPath for nested arrays, solutions and deployment, and converting cloud flows to agent flows. Suits people who already build flows and want to make them faster and more robust.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Power Platform Developer",
+      "Solution Architect"
+    ],
+    "level": "Advanced",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "18 videos, self-paced",
+    "prerequisites": "Comfortable building cloud flows with expressions and solutions",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Expressions",
+      "ALM",
+      "YouTube"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-youtube-thomas-janssen-pad-beginners",
+    "title": "Power Automate Desktop for Beginners | From Zero to Hero",
+    "provider": "YouTube - Thomas Janssen",
+    "url": "https://www.youtube.com/playlist?list=PLgSxNxbk3DbNaKgT4DcXzoABhVvg1JD8y",
+    "description": "A short free playlist introducing Power Automate Desktop, including web application automation, Excel handling and string functions. Useful as a quick first look at desktop flows (RPA) before committing to a longer course.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "RPA Developer",
+      "Automation Developer",
+      "Business User"
+    ],
+    "level": "Beginner",
+    "format": "Video",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "8 videos, self-paced",
+    "prerequisites": "Windows PC with Power Automate for desktop installed",
+    "tags": [
+      "Power Automate",
+      "Desktop flows",
+      "RPA",
+      "YouTube"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-packt-workflow-automation-microsoft-power-automate",
+    "title": "Workflow Automation with Microsoft Power Automate (3rd edition)",
+    "provider": "Packt Publishing",
+    "url": "https://www.packtpub.com/en-us/product/workflow-automation-with-microsoft-power-automate-9781836649625",
+    "description": "A December 2025 book by Aaron Guilmette covering cloud flows, desktop flows (RPA), AI Builder and Copilot, plus governance, compliance and enterprise deployment. A useful reference for consultants designing automations for clients.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "Solution Architect",
+      "Power Platform Developer",
+      "RPA Developer"
+    ],
+    "level": "Intermediate",
+    "format": "Book",
+    "cost": "Paid",
+    "costDetails": "eBook listed at around 32 USD on Packt; paperback and Packt subscription access also available",
+    "outcome": "Knowledge",
+    "duration": "Self-paced (about 544 pages)",
+    "prerequisites": "Basic familiarity with Microsoft 365",
+    "tags": [
+      "Power Automate",
+      "Cloud flows",
+      "Desktop flows",
+      "AI Builder",
+      "Governance"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-power-automate-community-forum",
+    "title": "Power Automate Forum - Microsoft Power Platform Community",
+    "provider": "Microsoft Power Platform Community",
+    "url": "https://community.powerplatform.com/forums/thread/?groupid=46ce02a3-e1a7-4176-81fc-d93a4001d287",
+    "description": "The main community Q&A forum for Power Automate, where makers and Microsoft staff discuss problems, known issues and workarounds for cloud and desktop flows. Worth bookmarking for troubleshooting and for spotting issues before they hit a client project.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Automation Developer",
+      "RPA Developer",
+      "Power Platform Developer",
+      "Solution Architect"
+    ],
+    "level": "Intermediate",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "Reading is free; posting requires signing in with a Microsoft account",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Power Automate",
+      "Community",
+      "Troubleshooting",
+      "Cloud flows",
+      "Desktop flows"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "auto-power-automate-blog-power-platform",
+    "title": "Power Automate - Microsoft Power Platform Blog",
+    "provider": "Microsoft Power Platform Blog",
+    "url": "https://www.microsoft.com/en-us/power-platform/blog/power-automate/",
+    "description": "Microsoft's official blog feed filtered to Power Automate, carrying product announcements, general availability news and monthly Power Platform feature updates. Worth following to keep client advice current as the product changes.",
+    "skillAreas": [
+      "automation-low-code"
+    ],
+    "roles": [
+      "Solution Architect",
+      "Automation Developer",
+      "Power Platform Developer",
+      "Business Analyst"
+    ],
+    "level": "Intermediate",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "",
+    "tags": [
+      "Power Automate",
+      "Product updates",
+      "Release news",
+      "Blog"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
     "id": "dev-gh900-github-foundations",
     "title": "GitHub Foundations (Exam GH-900)",
     "provider": "GitHub / Microsoft Learn",

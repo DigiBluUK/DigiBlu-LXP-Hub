@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   // Set only when the site is served from a sub-folder, e.g. "/DigiBlu-LXP-Hub" on
   // GitHub Pages (the deploy workflow sets it). Empty on its own domain.
   basePath: process.env.PAGES_BASE_PATH || "",
+  // The same value for client code (service worker registration).
+  env: { NEXT_PUBLIC_BASE_PATH: process.env.PAGES_BASE_PATH || "" },
   // Emit /courses/index.html rather than /courses.html so every static host
   // resolves the URLs without rewrite rules.
   trailingSlash: true,

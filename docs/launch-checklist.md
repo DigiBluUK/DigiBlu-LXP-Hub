@@ -26,6 +26,11 @@ These change how much of the rest applies.
   - AWS Cloud Practitioner Essentials links to AWS's course-description page, not the course itself.
   - ILM Level 7 links to ILM's overview of all levels.
   - Google "Foundations of Project Management" is marked Free; confirm whether completing it needs a Coursera subscription.
+- [ ] Power Automate (added 20 October 2026 as the Automation & Low-Code area, at the manager's request). Re-check:
+  - Microsoft retired PL-200 (31 August 2026), PL-600 (30 June 2026) and PL-500 (Power Automate RPA Developer), and is replacing PL-400 with AB-400. AB-620 (AI Agent Builder) is new and may still change.
+  - The two Udemy course pages block automated checks; open them to confirm the details.
+  - Pragmatic Works: confirm the completion certificate is included on the free plan.
+  - The Microsoft Applied Skills are listed as free; Microsoft's pages do not state a price.
 - [ ] Prices confirmed or written as approximate; decide whether to show GBP alongside USD.
 - [ ] Roles in each area agreed with the heads of practice, with one spelling per role.
 - [ ] Decide whether DigiBlu's own material (onboarding, process training, TalentLMS courses) is listed alongside external courses.
@@ -82,6 +87,8 @@ Make the hub answer the questions staff actually ask, in the words they use.
 - [x] Navigation matches digiblu.com: transparent at rest, frosted floating panel on scroll, hamburger menu below 900px, round theme button, back-to-top button (20 October 2026).
 - [x] Provider strip in the hero, built like the website's clients strip. A provider only appears when the catalogue has its courses (20 October 2026).
 - [ ] Provider marks: confirm with marketing that showing them is fine. Marks come from Simple Icons (CC0 artwork, still the owners' trademarks); Microsoft, OpenAI and AWS restrict their logos, so they show as names. Official logo files can replace them if DigiBlu's partner status allows.
+- [x] Installable as an app (web app manifest, app icons, offline service worker), with safe areas for notched phones and no zoom on tapping form controls (20 October 2026).
+- [ ] Install it on a real iPhone, an Android phone and in Edge on Windows: check the icon, the full-screen launch, and that visited pages open with the network off. The in-app preview browser cannot run service workers, so offline mode is only proven by a simulated install so far.
 - [ ] Visual pass in both themes on desktop and a real phone.
 - [ ] Lighthouse: aim for 100 on desktop across all four scores, as the website reached; 90+ on mobile.
 - [ ] Scheduled link checker (a GitHub Action) that reports broken course links weekly.

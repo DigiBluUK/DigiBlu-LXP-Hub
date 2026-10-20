@@ -22,6 +22,8 @@ export const PROVIDER_LIST: ProviderEntry[] = [
   { slug: "github", name: "GitHub", match: ["GitHub"] },
   { slug: "scrum-org", name: "Scrum.org", match: ["Scrum.org"] },
   { slug: "coursera", name: "Coursera", match: ["Coursera"] },
+  { slug: "linkedin-learning", name: "LinkedIn Learning", match: ["LinkedIn Learning"] },
+  { slug: "udemy", name: "Udemy", match: ["Udemy"] },
   { slug: "pmi", name: "PMI", match: ["PMI"] },
   { slug: "linux-foundation", name: "Linux Foundation", match: ["Linux Foundation"] },
   { slug: "kaggle", name: "Kaggle", match: ["Kaggle"] },
