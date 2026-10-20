@@ -2,27 +2,29 @@ import Form from "next/form";
 import Link from "next/link";
 import { AreaCard } from "@/components/AreaCard";
 import { Icon } from "@/components/Icon";
+import { ProviderStrip } from "@/components/ProviderStrip";
 import { OUTCOME_INFO, SKILL_AREAS } from "@/content/skill-areas";
 import { COURSES, STATS } from "@/lib/catalogue";
 import { OUTCOMES } from "@/lib/types";
 
+// Example searches, not a popularity ranking: the hub keeps no usage data.
 const SUGGESTIONS = ["Power BI", "Copilot", "Azure", "Scrum", "Leadership"];
 
 const ROADMAP = [
   {
-    stage: "Now · Version 1",
+    stage: "Now",
     title: "Find and save",
-    text: "Browse by skill area and role, filter by cost and what you get, and save courses to My list on this device.",
+    text: "Browse by skill area and role, filter by what you get and what it costs, and save courses to My list on this device.",
   },
   {
     stage: "Next",
     title: "Sign in and track",
-    text: "Sign in with your DigiBlu Microsoft account, track progress against each course, and see your list on any device.",
+    text: "Sign in with your DigiBlu Microsoft account, track your progress on each course, and keep your list on any device.",
   },
   {
     stage: "Later",
-    title: "Paths and insight",
-    text: "Suggested learning paths for each role, new courses added regularly, and a view of skills across the team.",
+    title: "Learning paths",
+    text: "A suggested path for each role, and new courses added as they are reviewed.",
   },
 ];
 
@@ -36,8 +38,8 @@ export default function Home() {
             Find the right learning <span className="accent">for your role.</span>
           </h1>
           <p className="lede mt-6">
-            A curated guide to courses, certifications and free resources for everyone at DigiBlu, organised by skill
-            area so you can see what is worth your time.
+            Courses, certifications and free resources for everyone at DigiBlu, grouped by skill area and role. See what
+            each one gives you and what it costs, and save the ones you want to come back to.
           </p>
 
           <Form action="/courses/" className="mt-10 max-w-2xl" role="search">
@@ -52,7 +54,7 @@ export default function Home() {
             </div>
           </Form>
           <div className="mt-4 flex flex-wrap items-center gap-2">
-            <span className="muted text-sm">Popular:</span>
+            <span className="muted text-sm">Try:</span>
             {SUGGESTIONS.map((s) => (
               <Link key={s} href={`/courses/?q=${encodeURIComponent(s)}`} className="chip">
                 {s}
@@ -73,6 +75,8 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <ProviderStrip />
         </div>
       </section>
 
@@ -82,7 +86,7 @@ export default function Home() {
             <div>
               <span className="eyebrow">Skill areas</span>
               <h2 id="areas-heading" className="h-section mt-4">
-                Start with your area of expertise
+                Start with your area of work
               </h2>
             </div>
             <Link href="/courses/" className="btn btn-ghost">
@@ -128,9 +132,9 @@ export default function Home() {
       <section className="section pt-0" aria-labelledby="roadmap-heading">
         <div className="container">
           <div className="band" style={{ background: "var(--brand-fill)" }}>
-            <span className="eyebrow eyebrow--on-brand">Roadmap</span>
+            <span className="eyebrow eyebrow--on-brand">What&apos;s coming</span>
             <h2 id="roadmap-heading" className="h-section mt-4 max-w-3xl">
-              Built to grow with how DigiBlu learns
+              This is the first version of the hub
             </h2>
             <div className="mt-10 grid gap-8 md:grid-cols-3">
               {ROADMAP.map((step) => (

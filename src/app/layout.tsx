@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { ScrollTop } from "@/components/ScrollTop";
 import { SiteHeader } from "@/components/SiteHeader";
 import { STATS } from "@/lib/catalogue";
 import { THEME_INIT } from "@/lib/theme";
@@ -50,13 +51,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <footer className="site-footer">
           <div className="container flex flex-wrap justify-between gap-4">
-            <p>DigiBlu Learning Experience Knowledge Hub · Version 1 pilot</p>
+            <p>DigiBlu Learning Experience Knowledge Hub · Version 1</p>
             <p className="max-w-xl">
-              Course details last reviewed {reviewed}. Prices and content are set by each provider and can change, so
-              check the provider&apos;s page before you book or pay.
+              Course details last checked {reviewed}. Prices and content are set by each provider and can change, so
+              check the provider&apos;s page before you book.
             </p>
           </div>
         </footer>
+        <ScrollTop />
       </body>
     </html>
   );

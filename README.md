@@ -20,7 +20,9 @@ Then open http://localhost:3000.
 ## Hosting
 
 - **Now (temporary):** GitHub Pages. Every push to `main` runs [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml), which builds with `PAGES_BASE_PATH=/<repository name>` (Pages serves project sites from a sub-folder) and publishes `out/`.
-- **Launch:** Cloudflare, as for the DigiBlu website. Build without `PAGES_BASE_PATH`, and set `ALLOW_INDEXING=true` only if the hub is public. Until then every page carries `noindex`.
+- **Launch:** Cloudflare, as for the DigiBlu website, behind DigiBlu sign-in (Cloudflare Access). Build without `PAGES_BASE_PATH`. The hub is for DigiBlu employees only, so every page keeps `noindex`; leave `ALLOW_INDEXING` unset.
+
+Until the hub sits behind sign-in, this repository and the Pages link are public: add only public course information, never names or internal material.
 
 What is left before launch, including SEO, AEO and GEO, is tracked in [`docs/launch-checklist.md`](docs/launch-checklist.md).
 

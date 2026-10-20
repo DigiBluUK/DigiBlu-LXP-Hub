@@ -33,6 +33,8 @@
   --maxw: 1320px;
   --gutter: 24px;
   --section-y: 72px;
+  /* Measured from the real bar by SiteHeader; 76px covers first paint. */
+  --nav-h: 76px;
 }
 
 :root[data-theme="light"] {
@@ -82,7 +84,7 @@
 }
 
 html {
-  scroll-padding-top: 88px;
+  scroll-padding-top: calc(var(--nav-h) + 16px);
 }
 
 body {
@@ -329,43 +331,65 @@ a {
   font-size: 14px;
 }
 
-/* ---------- Header ---------- */
+/* ---------- Navigation ----------
+   Follows digiblu.com: .site-nav is the full-width fixed positioner, and the
+   bar inside it is the max-width content row. Transparent at rest; once the
+   page scrolls (or the mobile menu opens) the bar becomes an inset, rounded
+   frosted-glass panel floating over the page. 0.68 is a floor for legibility
+   over arbitrary content, not a taste call (BRAND.md §8). */
 
-.site-header {
-  position: sticky;
+.site-nav {
+  position: fixed;
   top: 0;
-  z-index: 50;
-  background: rgba(var(--glass-rgb), 0.72);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--hairline-soft);
+  left: 0;
+  right: 0;
+  z-index: 80;
 }
-@supports not (backdrop-filter: blur(12px)) {
-  .site-header {
-    background: var(--bg);
-  }
-}
-.site-header__inner {
+.site-nav__bar {
+  position: relative;
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  min-height: 68px;
+  padding: 18px var(--gutter);
+  border: 1px solid transparent;
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, margin-top 0.25s ease,
+    width 0.25s ease;
 }
-.brand {
+.site-nav.is-scrolled .site-nav__bar {
+  width: calc(100% - (var(--gutter) * 2));
+  margin-top: 12px;
+  border-radius: 16px;
+  background: rgba(var(--glass-rgb), 0.68);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-color: rgba(var(--ink-rgb), 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .site-nav.is-scrolled .site-nav__bar {
+    background: rgba(var(--glass-rgb), 0.96);
+  }
+}
+
+.site-nav__logo {
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  min-height: 38px;
 }
 /* The wordmark is an alpha mask painted with the theme's ink (BRAND.md §2). The
    relative url() lets the bundler serve it, so it also works under a basePath. */
 .brand__mark {
   display: block;
-  height: 24px;
-  aspect-ratio: 4.1184;
+  width: 115px;
+  height: 28px;
   background-color: var(--text);
-  -webkit-mask: url("../assets/logo-mask.png") center / contain no-repeat;
-  mask: url("../assets/logo-mask.png") center / contain no-repeat;
+  -webkit-mask: url("../assets/logo-mask.png") left center / contain no-repeat;
+  mask: url("../assets/logo-mask.png") left center / contain no-repeat;
 }
 .brand__divider {
   width: 1px;
@@ -378,76 +402,371 @@ a {
   color: var(--muted);
   white-space: nowrap;
 }
-.site-nav {
+
+.site-nav__center {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 26px;
 }
 .site-nav__link {
+  position: relative;
   display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 40px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 14px;
-  color: var(--muted);
-  transition: color 0.2s, background-color 0.2s;
+  padding: 9px 0;
+  font-size: 15px;
+  color: rgba(var(--ink-rgb), 0.78);
+  transition: color 0.2s;
 }
 .site-nav__link:hover,
-.site-nav__link:focus-visible {
-  color: var(--text);
-}
+.site-nav__link:focus-visible,
 .site-nav__link[aria-current="page"] {
   color: var(--text);
-  background: rgba(var(--ink-rgb), 0.08);
 }
-.count-badge {
+.site-nav__link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--blue);
+}
+
+.site-nav__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.site-nav__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 15px;
+  border-radius: 7px;
+  background: var(--brand-fill);
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: filter 0.2s;
+}
+.site-nav__cta:hover,
+.site-nav__cta:focus-visible {
+  filter: brightness(1.18);
+}
+.site-nav__count {
   min-width: 20px;
   height: 20px;
   padding: 0 6px;
   border-radius: 999px;
-  background: var(--blue);
-  color: #fff;
+  background: #fff;
+  color: #0a1f6e;
   font-size: 11.5px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.theme-toggle__moon {
+
+.theme-toggle,
+.nav-toggle {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(var(--ink-rgb), 0.06);
+  border: 1px solid var(--hairline);
+  color: var(--text);
+  cursor: pointer;
+}
+.theme-toggle {
+  border-radius: 50%;
+}
+.theme-toggle svg {
+  width: 17px;
+  height: 17px;
+}
+/* The button shows the theme currently in effect. */
+.theme-toggle .icon-sun {
   display: none;
 }
-:root[data-theme="light"] .theme-toggle__sun {
-  display: none;
+:root[data-theme="light"] .theme-toggle .icon-sun {
+  display: block;
 }
-:root[data-theme="light"] .theme-toggle__moon {
-  display: inline-flex;
+:root[data-theme="light"] .theme-toggle .icon-moon {
+  display: none;
 }
 @media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) .theme-toggle__sun {
+  :root:not([data-theme="dark"]) .theme-toggle .icon-sun {
+    display: block;
+  }
+  :root:not([data-theme="dark"]) .theme-toggle .icon-moon {
     display: none;
   }
-  :root:not([data-theme="dark"]) .theme-toggle__moon {
-    display: inline-flex;
+}
+
+.nav-toggle {
+  display: none;
+  border-radius: 9px;
+}
+.nav-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+.nav-toggle .icon-close,
+.nav-toggle[aria-expanded="true"] .icon-open {
+  display: none;
+}
+.nav-toggle[aria-expanded="true"] .icon-close {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 14px;
+  background: var(--surface-2);
+  border: 1px solid rgba(var(--ink-rgb), 0.14);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+.mobile-menu.open {
+  display: block;
+}
+.mobile-menu a,
+.theme-toggle--row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(var(--ink-rgb), 0.92);
+}
+.mobile-menu a:hover,
+.theme-toggle--row:hover {
+  background: rgba(var(--ink-rgb), 0.06);
+}
+.mobile-menu a[aria-current="page"] {
+  color: var(--accent-text);
+}
+.mobile-menu__actions {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(var(--ink-rgb), 0.12);
+}
+.theme-toggle--row {
+  height: auto;
+  justify-content: flex-start;
+  border: 0;
+  background: none;
+}
+
+.theme-toggle:focus-visible,
+.nav-toggle:focus-visible,
+.site-nav__cta:focus-visible,
+.site-nav__link:focus-visible,
+.mobile-menu a:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .site-nav__center,
+  .site-nav__right > .theme-toggle {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+  /* Icon only: crop the lockup mask to its circular mark (the first 24.3% of
+     the 313x76 mask), as digiblu.com does below 900px. */
+  .brand__mark {
+    width: 28px;
+    -webkit-mask-size: auto 100%;
+    mask-size: auto 100%;
+  }
+  .site-nav__logo {
+    gap: 10px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 380px) {
   .brand__divider,
   .brand__label {
     display: none;
   }
-  .site-nav__link {
-    padding: 8px 10px;
-    font-size: 13.5px;
+}
+
+/* Every page starts below the fixed bar; the home hero pulls itself back up
+   so its glow runs behind the transparent bar. */
+main {
+  padding-top: var(--nav-h);
+}
+
+.scroll-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 70;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-fill);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.scroll-top.visible {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.scroll-top svg {
+  width: 18px;
+  height: 18px;
+}
+.scroll-top:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+@media (max-width: 620px) {
+  .scroll-top {
+    right: 16px;
+    bottom: 16px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav__bar {
+    transition: none;
+  }
+}
+
+/* ---------- Provider strip ----------
+   Built like the clients strip on digiblu.com: single-ink marks, muted at rest
+   and full on hover, scrolling continuously. */
+
+.providers {
+  margin-top: 56px;
+}
+.providers__label {
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 18px;
+}
+.providers__viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
+}
+.providers__track {
+  display: flex;
+  width: max-content;
+  animation: providers-scroll var(--providers-duration, 54s) linear infinite;
+}
+.providers__track:hover,
+.providers__track:focus-within {
+  animation-play-state: paused;
+}
+@keyframes providers-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.providers__group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 48px;
+  padding-right: 48px;
+}
+.provider {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  white-space: nowrap;
+  color: var(--text);
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+.provider svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+.providers__track:hover .provider {
+  opacity: 0.8;
+}
+.provider:hover,
+.provider:focus-visible {
+  opacity: 1;
+}
+@media (max-width: 620px) {
+  .providers__group {
+    gap: 36px;
+    padding-right: 36px;
+  }
+  .provider {
+    font-size: 17px;
+  }
+  .provider svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .providers__track {
+    animation: none;
+    width: auto;
+  }
+  .providers__group {
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    row-gap: 8px;
+  }
+  .providers__group[aria-hidden="true"] {
+    display: none;
+  }
+  .providers__viewport {
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 }
 
 /* ---------- Hero ---------- */
 
+/* Pulled up behind the fixed nav so the glow runs under the transparent bar. */
 .hero {
   background: var(--hero-glow);
-  padding-block: clamp(56px, 9vw, 112px) var(--section-y);
+  margin-top: calc(var(--nav-h) * -1);
+  padding-top: calc(var(--nav-h) + clamp(48px, 8vw, 104px));
+  padding-bottom: var(--section-y);
+  overflow: hidden;
 }
 
 .stats {
@@ -662,7 +981,7 @@ a {
 }
 .filters {
   position: sticky;
-  top: 92px;
+  top: calc(var(--nav-h) + 20px);
   display: flex;
   flex-direction: column;
   gap: 22px;

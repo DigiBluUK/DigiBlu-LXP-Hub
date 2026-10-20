@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { CourseCard } from "@/components/CourseCard";
 import { Icon } from "@/components/Icon";
 import { SKILL_AREAS } from "@/content/skill-areas";
-import { COURSES } from "@/lib/catalogue";
+import { COURSES, getProvider } from "@/lib/catalogue";
 import { COSTS, FORMATS, LEVELS, OUTCOMES, type Course } from "@/lib/types";
 
 const GROUPS = [
@@ -17,7 +17,7 @@ const GROUPS = [
 ] as const;
 
 type GroupKey = (typeof GROUPS)[number]["key"];
-type Filters = Record<GroupKey, string[]> & { q: string; sort: string };
+type Filters = Record<GroupKey, string[]> & { q: string; sort: string; provider: string };
 
 const fieldOf = (course: Course, key: GroupKey): string[] =>
   key === "area" ? course.skillAreas : [course[key]];
@@ -34,6 +34,7 @@ function parse(params: URLSearchParams): Filters {
   return {
     q: params.get("q") ?? "",
     sort: params.get("sort") ?? "",
+    provider: params.get("provider") ?? "",
     area: list("area"),
     outcome: list("outcome"),
     cost: list("cost"),
@@ -46,6 +47,7 @@ function toQuery(filters: Filters): string {
   const params = new URLSearchParams();
   if (filters.q.trim()) params.set("q", filters.q.trim());
   for (const { key } of GROUPS) if (filters[key].length) params.set(key, filters[key].join(","));
+  if (filters.provider) params.set("provider", filters.provider);
   if (filters.sort) params.set("sort", filters.sort);
   return params.toString();
 }
@@ -63,17 +65,21 @@ export function CourseBrowser() {
 
   const results = useMemo(() => {
     const tokens = filters.q.toLowerCase().split(/\s+/).filter(Boolean);
+    const provider = getProvider(filters.provider);
     const matches = COURSES.filter(
       (course) =>
         GROUPS.every(({ key }) => !filters[key].length || fieldOf(course, key).some((v) => filters[key].includes(v))) &&
-        tokens.every((t) => haystacks.get(course.id)!.includes(t)),
+        tokens.every((t) => haystacks.get(course.id)!.includes(t)) &&
+        (!provider || provider.pattern.test(course.provider)),
     );
     if (filters.sort === "title") return [...matches].sort((a, b) => a.title.localeCompare(b.title));
     if (filters.sort === "level") return [...matches].sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level));
     return matches;
   }, [filters]);
 
-  const activeCount = GROUPS.reduce((n, { key }) => n + filters[key].length, 0) + (filters.q ? 1 : 0);
+  const provider = getProvider(filters.provider);
+  const activeCount =
+    GROUPS.reduce((n, { key }) => n + filters[key].length, 0) + (filters.q ? 1 : 0) + (provider ? 1 : 0);
 
   const toggle = (key: GroupKey, value: string) =>
     setFilters((f) => ({
@@ -81,7 +87,8 @@ export function CourseBrowser() {
       [key]: f[key].includes(value) ? f[key].filter((v) => v !== value) : [...f[key], value],
     }));
 
-  const clearAll = () => setFilters({ q: "", sort: filters.sort, area: [], outcome: [], cost: [], level: [], format: [] });
+  const clearAll = () =>
+    setFilters({ q: "", sort: filters.sort, provider: "", area: [], outcome: [], cost: [], level: [], format: [] });
 
   return (
     <>
@@ -97,7 +104,7 @@ export function CourseBrowser() {
       </div>
 
       <div className="toolbar">
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           <button
             type="button"
             className="btn btn-ghost filters-toggle"
@@ -110,6 +117,17 @@ export function CourseBrowser() {
           <p className="muted" aria-live="polite">
             Showing <strong className="text-[var(--text)]">{results.length}</strong> of {COURSES.length} resources
           </p>
+          {provider && (
+            <button
+              type="button"
+              className="chip"
+              aria-pressed="true"
+              aria-label={`Showing courses from ${provider.name}. Remove this filter`}
+              onClick={() => setFilters((f) => ({ ...f, provider: "" }))}
+            >
+              From {provider.name} <span aria-hidden="true">×</span>
+            </button>
+          )}
           {activeCount > 0 && (
             <button type="button" className="chip" onClick={clearAll}>
               Clear all

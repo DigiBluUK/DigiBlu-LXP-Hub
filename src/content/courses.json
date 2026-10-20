@@ -391,6 +391,180 @@
     "lastReviewed": "2026-10-20"
   },
   {
+    "id": "ai-anthropic-claude-101",
+    "title": "Claude 101",
+    "provider": "Anthropic Academy",
+    "url": "https://academy.claude.com/courses/claude-101",
+    "description": "A practical starter course on using Claude in day-to-day work, from a first conversation and writing clearer prompts to projects, artifacts, skills and connected tools. Suits anyone in the business who is new to Claude and wants a quick, role-agnostic introduction.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "All employees",
+      "Business User"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free; sign in to save progress and receive the completion credential",
+    "outcome": "Completion certificate",
+    "duration": "~2.5 hours",
+    "prerequisites": "",
+    "tags": [
+      "Claude",
+      "Prompting",
+      "AI literacy",
+      "Productivity"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-anthropic-ai-fluency-framework-foundations",
+    "title": "AI Fluency: Framework and foundations",
+    "provider": "Anthropic Academy",
+    "url": "https://academy.claude.com/courses/ai-fluency-framework-foundations",
+    "description": "Teaches a four-part framework (Delegation, Description, Discernment, Diligence) for working with generative AI effectively and responsibly, with a grounding in how large language models behave and where they fall short. Useful for every employee, whichever AI assistant they use.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "All employees",
+      "Business User"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free; sign in to save progress and take the final assessment",
+    "outcome": "Completion certificate",
+    "duration": "~4 hours",
+    "prerequisites": "",
+    "tags": [
+      "AI fluency",
+      "Responsible AI",
+      "Prompting",
+      "Claude"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-anthropic-building-with-the-claude-api",
+    "title": "Building with the Claude API",
+    "provider": "Anthropic Academy",
+    "url": "https://academy.claude.com/courses/building-with-the-claude-api",
+    "description": "A long, hands-on developer course covering the Claude API end to end: conversations, system prompts, prompt evaluation, tool use, retrieval-augmented generation, prompt caching, MCP and agent workflows. Aimed at engineers who will ship AI features into production applications.",
+    "skillAreas": [
+      "ai",
+      "software-development"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Back-end Developer",
+      "ML Engineer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Course is free; an Anthropic API key is needed for the exercises and API usage may incur charges",
+    "outcome": "Completion certificate",
+    "duration": "~9 hours",
+    "prerequisites": "Proficiency in Python, basic JSON handling, and access to an Anthropic API key",
+    "tags": [
+      "Claude",
+      "API",
+      "RAG",
+      "Tool use",
+      "MCP",
+      "Agents"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-openai-ai-foundations",
+    "title": "AI Foundations",
+    "provider": "OpenAI Academy",
+    "url": "https://academy.openai.com/public/courses/ai-foundations-dnq5w",
+    "description": "An introductory, self-paced course on how AI and ChatGPT work, built around a real task you already do. Covers clear instructions, supplying context, reviewing outputs and using AI responsibly, with no technical background needed.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "All employees",
+      "Business User"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free; sign in with a ChatGPT account to enroll. Badge needs an assessment score of 80% or higher",
+    "outcome": "Completion certificate",
+    "duration": "~70 minutes",
+    "prerequisites": "A ChatGPT account and a real work task to practise on",
+    "tags": [
+      "ChatGPT",
+      "Prompting",
+      "AI literacy",
+      "Responsible AI"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-openai-applied-ai-foundations",
+    "title": "Applied AI Foundations",
+    "provider": "OpenAI Academy",
+    "url": "https://academy.openai.com/public/courses/applied-ai-foundations-szsmv",
+    "description": "Follow-on course that turns one-off prompts into repeatable workflows: you pick a recurring task, break it into steps, decide where ChatGPT helps and add review points. Best for staff who already use AI occasionally and want to apply it more consistently.",
+    "skillAreas": [
+      "ai"
+    ],
+    "roles": [
+      "All employees",
+      "Business User"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free; sign in with a ChatGPT account to enroll. Badge needs an assessment score of 80% or higher",
+    "outcome": "Completion certificate",
+    "duration": "~80 minutes",
+    "prerequisites": "Some experience with AI tools; completing AI Foundations first is recommended",
+    "tags": [
+      "ChatGPT",
+      "Workflows",
+      "Productivity",
+      "AI literacy"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "ai-openai-get-started-with-codex",
+    "title": "Get Started with Codex",
+    "provider": "OpenAI Academy",
+    "url": "https://academy.openai.com/public/courses/get-started-with-codex-jkhsq",
+    "description": "Developer course on using OpenAI's Codex coding agent for well-scoped work in a real repository: giving it the right context, setting completion criteria, verifying changes and producing evidence for review. Includes a guided hands-on lab and suits engineers new to Codex.",
+    "skillAreas": [
+      "ai",
+      "software-development"
+    ],
+    "roles": [
+      "Software Engineer",
+      "Back-end Developer",
+      "Front-end Developer"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "Free; sign in with a ChatGPT account to enroll. Badge needs an assessment score of 80% or higher",
+    "outcome": "Completion certificate",
+    "duration": "~80 minutes",
+    "prerequisites": "Experience working in repositories with an IDE and version control; familiarity with shell commands, tests, builds, pull requests and diffs",
+    "tags": [
+      "Codex",
+      "Coding agents",
+      "OpenAI",
+      "Code review"
+    ],
+    "lastReviewed": "2026-10-20"
+  },
+  {
     "id": "ai-mslearn-build-foundational-generative-ai-skills",
     "title": "Build foundational generative AI skills",
     "provider": "Microsoft Learn",

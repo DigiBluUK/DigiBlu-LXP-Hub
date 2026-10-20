@@ -1,4 +1,6 @@
 import raw from "@/content/courses.json";
+import { PROVIDER_ICONS } from "@/content/provider-icons";
+import { PROVIDER_LIST, type ProviderEntry } from "@/content/providers";
 import { SKILL_AREAS } from "@/content/skill-areas";
 import {
   COSTS,
@@ -101,6 +103,28 @@ export function coursesInArea(id: SkillAreaId): Course[] {
 export function areaGradient(id: SkillAreaId): string {
   const index = SKILL_AREAS.findIndex((a) => a.id === id);
   return `var(--grad-${(index % 4) + 1})`;
+}
+
+const escapeRegExp = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+export interface Provider extends ProviderEntry {
+  icon?: string;
+  count: number;
+  pattern: RegExp;
+}
+
+export const PROVIDERS: Provider[] = PROVIDER_LIST.map((entry) => {
+  const pattern = new RegExp(`\\b(${entry.match.map(escapeRegExp).join("|")})\\b`, "i");
+  return {
+    ...entry,
+    icon: PROVIDER_ICONS[entry.slug],
+    pattern,
+    count: COURSES.filter((c) => pattern.test(c.provider)).length,
+  };
+}).filter((p) => p.count > 0);
+
+export function getProvider(slug: string): Provider | undefined {
+  return PROVIDERS.find((p) => p.slug === slug);
 }
 
 export const STATS = {
