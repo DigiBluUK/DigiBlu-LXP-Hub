@@ -13,7 +13,7 @@ export const SKILL_AREAS: SkillArea[] = [
   },
   {
     id: "ai",
-    name: "AI",
+    name: "Artificial Intelligence",
     summary: "From everyday AI literacy and Copilot to building AI solutions.",
     description:
       "Practical AI for everyone: using generative AI and Microsoft 365 Copilot well, writing good prompts, and for technical roles, building, deploying and governing AI on Azure.",
