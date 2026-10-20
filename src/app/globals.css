@@ -909,7 +909,9 @@ main {
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  /* min() lets a card shrink below 290px on the narrowest phones instead of
+     pushing past the page gutter. */
+  grid-template-columns: repeat(auto-fill, minmax(min(290px, 100%), 1fr));
   gap: 16px;
 }
 .course-card {
