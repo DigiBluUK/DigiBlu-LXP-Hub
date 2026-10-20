@@ -117,6 +117,13 @@ Make the hub answer the questions staff actually ask, in the words they use.
 - [ ] Theme button flips the whole site and remembers the choice.
 - [ ] A mistyped address shows the hub's own not-found page.
 
+## Training matrix
+
+- [x] Interim export (20 October 2026): "Export training matrix" on Browse and on each skill area page downloads an Excel template built from the courses on screen. One sheet per skill area, a 0 to 5 grade drop-down in every cell, heat-map colours, a team average row, and a How to use sheet. Grades and colours are set in `src/content/matrix.ts`.
+- [ ] Agree the wording of the six grades with L&D and managers.
+- [ ] Agree where completed matrices live (a restricted SharePoint or Teams location) and who can see them. They hold personal data and must never be added to the hub or this repository.
+- [ ] Version 2: import completed matrices using the course IDs in each sheet's hidden row 3, then keep the matrix in the hub behind sign-in.
+
 ## Version 2 (after launch)
 
 Sign-in with DigiBlu Microsoft accounts (Entra ID), progress tracking, My list on any device, learning paths per role. This step removes the static export and adds a small database; saved lists carry over by course id. See the roadmap in the README.

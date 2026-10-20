@@ -228,6 +228,10 @@ label {
   cursor: pointer;
   transition: filter 0.2s, background-color 0.2s, border-color 0.2s;
 }
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .btn-primary {
   background: var(--brand-fill);
   color: #fff;

@@ -19,6 +19,10 @@ Then open http://localhost:3000.
 
 The hub installs like an app (Add to Home Screen on phones, Install in Edge or Chrome) and opens previously visited pages offline. The manifest is [`src/app/manifest.ts`](src/app/manifest.ts) and the service worker [`public/sw.js`](public/sw.js): pages are fetched from the network first, so a new release shows as soon as someone is online.
 
+## Training matrix export
+
+"Export training matrix" on Browse and on each skill area page downloads an Excel workbook for the courses on screen: a How to use sheet, then one sheet per skill area with courses across the top and blank rows for people, graded 0 to 5. The file is generated in the browser ([`src/lib/training-matrix.ts`](src/lib/training-matrix.ts), using ExcelJS loaded only on click), so names typed into it never reach the hub. The grading scale and colours live in [`src/content/matrix.ts`](src/content/matrix.ts).
+
 ## Hosting
 
 - **Now (temporary):** GitHub Pages. Every push to `main` runs [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml), which builds with `PAGES_BASE_PATH=/<repository name>` (Pages serves project sites from a sub-folder) and publishes `out/`.
