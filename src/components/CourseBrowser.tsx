@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { CourseCard } from "@/components/CourseCard";
 import { ExportMatrixButton } from "@/components/ExportMatrixButton";
@@ -87,6 +88,13 @@ export function CourseBrowser() {
       ...f,
       [key]: f[key].includes(value) ? f[key].filter((v) => v !== value) : [...f[key], value],
     }));
+
+  // Hand the search term (and a single chosen area) to the request form.
+  const requestHref = `/contact/?${new URLSearchParams({
+    type: "request",
+    ...(filters.q.trim() ? { title: filters.q.trim() } : {}),
+    ...(filters.area.length === 1 ? { area: filters.area[0] } : {}),
+  })}`;
 
   const clearAll = () =>
     setFilters({ q: "", sort: filters.sort, provider: "", area: [], outcome: [], cost: [], level: [], format: [] });
@@ -190,10 +198,23 @@ export function CourseBrowser() {
             <div className="empty">
               <p className="text-lg">No resources match those filters.</p>
               <p className="muted mt-1">Try removing a filter or searching for something broader.</p>
-              <button type="button" className="btn btn-ghost mt-5" onClick={clearAll}>
-                Clear all filters
-              </button>
+              <div className="mt-5 flex flex-wrap justify-center gap-3">
+                <button type="button" className="btn btn-ghost" onClick={clearAll}>
+                  Clear all filters
+                </button>
+                <Link href={requestHref} className="btn btn-primary">
+                  Request it
+                </Link>
+              </div>
             </div>
+          )}
+          {results.length > 0 && (
+            <p className="muted mt-8">
+              Can&apos;t find what you need?{" "}
+              <Link href={requestHref} className="text-[var(--accent-text)] underline-offset-4 hover:underline">
+                Request a course or resource
+              </Link>
+            </p>
           )}
         </div>
       </div>

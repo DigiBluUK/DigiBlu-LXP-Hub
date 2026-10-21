@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { CourseCard } from "@/components/CourseCard";
 import { ExportMatrixButton } from "@/components/ExportMatrixButton";
 import { OUTCOME_INFO } from "@/content/skill-areas";
@@ -52,6 +53,16 @@ export function AreaCourses({ areaId }: { areaId: SkillAreaId }) {
           </section>
         );
       })}
+
+      <div className="panel mt-14 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h2 className="text-lg">Missing something in {area.name}?</h2>
+          <p className="muted mt-1">Tell us about a course, certification or resource and we will review it.</p>
+        </div>
+        <Link href={`/contact/?type=request&area=${areaId}`} className="btn btn-primary">
+          Request a course
+        </Link>
+      </div>
     </>
   );
 }

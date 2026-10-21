@@ -111,7 +111,13 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
               </div>
             </div>
             <p className="muted px-1 text-sm">
-              Last checked {reviewed}. Details are set by the provider and can change.
+              Last checked {reviewed}. Details are set by the provider and can change.{" "}
+              <Link
+                href={`/contact/?type=message&topic=problem&course=${course.id}`}
+                className="text-[var(--accent-text)] underline-offset-4 hover:underline"
+              >
+                Something wrong or out of date? Tell us
+              </Link>
             </p>
           </aside>
         </div>

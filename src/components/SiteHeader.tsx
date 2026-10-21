@@ -15,6 +15,7 @@ const LINKS = [
   { href: "/", label: "Home" },
   { href: "/courses/", label: "Browse" },
   { href: "/areas/", label: "Skill areas" },
+  { href: "/contact/", label: "Contact" },
 ];
 
 type Theme = "light" | "dark";

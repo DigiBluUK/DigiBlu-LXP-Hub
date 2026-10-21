@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import Link from "next/link";
 import { ScrollTop } from "@/components/ScrollTop";
 import { ServiceWorker } from "@/components/ServiceWorker";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -63,7 +64,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <footer className="site-footer">
           <div className="container flex flex-wrap justify-between gap-4">
-            <p>DigiBlu Learning Experience Knowledge Hub · Version 1</p>
+            <div className="flex flex-col gap-2">
+              <p>DigiBlu Learning Experience Knowledge Hub · Version 1</p>
+              <p className="flex flex-wrap gap-x-5 gap-y-1">
+                <Link href="/contact/?type=request" className="footer-link">
+                  Request a course
+                </Link>
+                <Link href="/contact/?type=message" className="footer-link">
+                  Contact the hub team
+                </Link>
+              </p>
+            </div>
             <p className="max-w-xl">
               Course details last checked {reviewed}. Prices and content are set by each provider and can change, so
               check the provider&apos;s page before you book.

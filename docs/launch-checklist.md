@@ -45,7 +45,16 @@ Follow the website's voice rules (BRAND.md §10): direct and specific, UK Englis
 - [ ] Area introductions: one line on who the area is for and what to start with.
 - [ ] Every course description in our own words, one or two sentences, saying who it suits.
 - [ ] Empty states, the 404 page, the My list note and the footer.
-- [ ] Footer: link to digiblu.com and a "Suggest a course" route (Microsoft Form or L&D mailbox).
+- [x] Footer: "Request a course" and "Contact the hub team" links (21 October 2026).
+- [ ] Footer: link to digiblu.com.
+
+## Contact and course requests
+
+- [x] Contact page with two forms, "Request a course" and "Send a message", reached from the nav, the footer, Browse ("Can't find what you need?"), each skill area ("Missing something?") and each course ("Something wrong or out of date?"), with the details pre-filled (21 October 2026).
+- [ ] Set the shared mailbox in `src/content/contact.ts` (`HUB_MAILBOX`). Until then the forms say they are not set up and cannot send.
+- [ ] Agree how requests are handled: who triages the mailbox, how quickly people get a reply, and that accepted requests are added to `courses.json` (and the requester told).
+- [ ] Optional: a Microsoft List as the request tracker, filled from the mailbox by a Power Automate flow, so nothing gets lost in email.
+- [ ] At the move to Cloudflare: send forms automatically (a small Worker endpoint, as the website's contact form does) instead of opening the person's email app.
 
 ## 4. Findability inside DigiBlu (in place of public SEO)
 
