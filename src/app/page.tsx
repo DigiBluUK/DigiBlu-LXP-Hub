@@ -14,7 +14,7 @@ const ROADMAP = [
   {
     stage: "Now",
     title: "Find and save",
-    text: "Browse by skill area and role, filter by what you get and what it costs, and save courses to My list on this device.",
+    text: "Browse by area and role, filter by what you get and what it costs, and save courses to My list on this device.",
   },
   {
     stage: "Next",
@@ -38,7 +38,7 @@ export default function Home() {
             Find the right learning <span className="accent">for your role.</span>
           </h1>
           <p className="lede mt-6">
-            Courses, certifications and free resources for everyone at DigiBlu, grouped by skill area and role. See what
+            Courses, certifications and free resources for everyone at DigiBlu, grouped by area and role. See what
             each one gives you and what it costs, and save the ones you want to come back to.
           </p>
 
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="stats mt-12">
             {[
               [STATS.total, "learning resources"],
-              [STATS.areas, "skill areas"],
+              [STATS.areas, "areas of learning"],
               [STATS.certifications, "industry certifications"],
               [STATS.free, "free to start"],
             ].map(([value, label]) => (
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="container">
           <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <span className="eyebrow">Skill areas</span>
+              <span className="eyebrow">Learning</span>
               <h2 id="areas-heading" className="h-section mt-4">
                 Start with your area of work
               </h2>

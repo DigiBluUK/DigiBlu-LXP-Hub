@@ -101,7 +101,7 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
               <p className="muted mt-2">{OUTCOME_INFO[course.outcome].blurb}</p>
             </div>
             <div className="panel">
-              <p className="filter-group__label">Skill areas</p>
+              <p className="filter-group__label">Learning</p>
               <div className="flex flex-wrap gap-2">
                 {course.skillAreas.map((id) => (
                   <Link key={id} href={`/areas/${id}/`} className="chip">

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s · DigiBlu Knowledge Hub",
   },
   description:
-    "Courses, certifications and free learning for everyone at DigiBlu, organised by skill area and role.",
+    "Courses, certifications and free learning for everyone at DigiBlu, organised by area and role.",
   robots: { index: false, follow: false },
   appleWebApp: { capable: true, title: "Knowledge Hub", statusBarStyle: "black-translucent" },
   formatDetection: { telephone: false },

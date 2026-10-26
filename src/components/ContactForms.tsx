@@ -88,7 +88,7 @@ export function ContactForms() {
       `What to add: ${title.trim()}`,
       `Link: ${link.trim() || "Not given"}`,
       `Provider: ${provider.trim() || "Not given"}`,
-      `Skill area: ${areaName}`,
+      `Learning: ${areaName}`,
       `What it gives: ${kind || "Not sure"}`,
       `Cost: ${cost || "Not sure"}`,
       "",
@@ -219,7 +219,7 @@ export function ContactForms() {
                 placeholder="e.g. Microsoft Learn"
               />
             </Field>
-            <Field id="area" label="Skill area">
+            <Field id="area" label="Learning">
               <select id="area" className="input" value={area} onChange={(e) => setArea(e.target.value)}>
                 <option value="">Not sure</option>
                 {SKILL_AREAS.map((a) => (

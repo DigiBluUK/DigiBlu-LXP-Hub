@@ -14,7 +14,7 @@ import { THEME_KEY } from "@/lib/theme";
 const LINKS = [
   { href: "/", label: "Home" },
   { href: "/courses/", label: "Browse" },
-  { href: "/areas/", label: "Skill areas" },
+  { href: "/areas/", label: "Learning" },
   { href: "/contact/", label: "Contact" },
 ];
 

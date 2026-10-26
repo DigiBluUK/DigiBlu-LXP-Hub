@@ -11,7 +11,7 @@ export default function manifest(): MetadataRoute.Manifest {
     id: `${base}/`,
     name: "DigiBlu Learning Experience Knowledge Hub",
     short_name: "Knowledge Hub",
-    description: "Courses, certifications and free learning for everyone at DigiBlu, by skill area and role.",
+    description: "Courses, certifications and free learning for everyone at DigiBlu, by area and role.",
     lang: "en-GB",
     start_url: `${base}/`,
     scope: `${base}/`,
@@ -26,7 +26,7 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     shortcuts: [
       { name: "Browse courses", url: `${base}/courses/` },
-      { name: "Skill areas", url: `${base}/areas/` },
+      { name: "Learning", url: `${base}/areas/` },
       { name: "My list", url: `${base}/my-list/` },
     ],
   };

@@ -11,7 +11,7 @@ import { COURSES, getProvider } from "@/lib/catalogue";
 import { COSTS, FORMATS, LEVELS, OUTCOMES, type Course } from "@/lib/types";
 
 const GROUPS = [
-  { key: "area", label: "Skill area", options: SKILL_AREAS.map((a) => ({ value: a.id, label: a.name })) },
+  { key: "area", label: "Learning", options: SKILL_AREAS.map((a) => ({ value: a.id, label: a.name })) },
   { key: "outcome", label: "What you get", options: OUTCOMES.map((v) => ({ value: v, label: v })) },
   { key: "cost", label: "Cost", options: COSTS.map((v) => ({ value: v, label: v })) },
   { key: "level", label: "Level", options: LEVELS.map((v) => ({ value: v, label: v })) },

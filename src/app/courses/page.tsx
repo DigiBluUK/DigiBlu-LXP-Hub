@@ -11,7 +11,7 @@ export default function CoursesPage() {
         <span className="eyebrow">Browse</span>
         <h1 className="h-page mt-4">All learning resources</h1>
         <p className="lede mt-4">
-          Search across every skill area, then narrow down by what you get, cost, level and format.
+          Search across every area of learning, then narrow down by what you get, cost, level and format.
         </p>
         <div className="mt-10">
           {/* The browser reads filters from the URL, which only exists in the browser. */}
