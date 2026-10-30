@@ -21,7 +21,7 @@ The hub installs like an app (Add to Home Screen on phones, Install in Edge or C
 
 ## Training matrix export
 
-"Export training matrix" on Browse and on each skill area page downloads an Excel workbook for the courses on screen: a How to use sheet, then one sheet per skill area with courses across the top and blank rows for people, graded 0 to 5. The file is generated in the browser ([`src/lib/training-matrix.ts`](src/lib/training-matrix.ts), using ExcelJS loaded only on click), so names typed into it never reach the hub. The grading scale and colours live in [`src/content/matrix.ts`](src/content/matrix.ts).
+"Export training matrix" in the nav downloads an Excel workbook of every course: a How to use sheet, then one sheet per area of expertise with courses across the top and blank rows for people, graded 0 to 5. The file is generated in the browser ([`src/lib/training-matrix.ts`](src/lib/training-matrix.ts), using ExcelJS loaded only on click), so names typed into it never reach the hub. The grading scale and colours live in [`src/content/matrix.ts`](src/content/matrix.ts).
 
 ## Hosting
 

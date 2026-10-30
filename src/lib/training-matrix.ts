@@ -1,7 +1,7 @@
 import type { Cell, DataValidation, Workbook } from "exceljs";
 import { GRADES, MATRIX_HEADERS, MATRIX_PEOPLE_ROWS } from "@/content/matrix";
 import { OUTCOME_INFO, SKILL_AREAS } from "@/content/skill-areas";
-import { OUTCOMES, type Course, type SkillAreaId } from "@/lib/types";
+import { OUTCOMES, type Course } from "@/lib/types";
 
 // Builds the training matrix workbook in the browser and downloads it. The hub
 // never sees the names people type in: the file is a blank template that lives
@@ -37,7 +37,7 @@ function columnLetter(n: number): string {
 /** Excel sheet names: at most 31 characters and none of [ ] : * ? / \ */
 const sheetName = (name: string) => name.replace(/[[\]:*?/\\]/g, "-").slice(0, 31);
 
-function addGuideSheet(workbook: Workbook, hubUrl: string, scope: string, courseCount: number, sheets: string[]) {
+function addGuideSheet(workbook: Workbook, hubUrl: string, courseCount: number, sheetCount: number) {
   const ws = workbook.addWorksheet("How to use", { views: [{ showGridLines: false }] });
   ws.columns = [{ width: 3 }, { width: 30 }, { width: 80 }];
   let row = 2;
@@ -70,9 +70,7 @@ function addGuideSheet(workbook: Workbook, hubUrl: string, scope: string, course
   row += 1;
   const date = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
   const intro = ws.getCell(row, 2);
-  intro.value = `Created from the Learning Experience Hub on ${date}. ${scope}: ${courseCount} ${
-    courseCount === 1 ? "course" : "courses"
-  } on ${sheets.length} ${sheets.length === 1 ? "sheet" : "sheets"} (${sheets.join(", ")}).`;
+  intro.value = `Created from the Learning Experience Hub on ${date}: ${courseCount} courses on ${sheetCount} sheets, one per area of expertise.`;
   intro.font = { color: argb(GREY) };
   row += 1;
   const link = ws.getCell(row, 2);
@@ -204,40 +202,27 @@ function addAreaSheet(workbook: Workbook, name: string, courses: Course[], hubUr
   }
 }
 
-/**
- * Downloads a matrix for the given courses: one sheet per area of expertise, by each
- * course's main area. Pass `areaId` to put every course on that area's sheet
- * (used from an area page, where courses shared with another area belong there).
- */
-export async function downloadTrainingMatrix({
-  courses,
-  scope,
-  areaId,
-}: {
-  courses: Course[];
-  scope: string;
-  areaId?: SkillAreaId;
-}) {
+/** Downloads a matrix for the given courses: one sheet per area of expertise, by each course's main area. */
+export async function downloadTrainingMatrix(courses: Course[]) {
   const { default: ExcelJS } = await import("exceljs");
   const hubUrl = `${window.location.origin}${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}`;
 
   const groups = SKILL_AREAS.map((area) => ({
     area,
-    courses: courses.filter((c) => (areaId ? area.id === areaId : c.skillAreas[0] === area.id)),
+    courses: courses.filter((c) => c.skillAreas[0] === area.id),
   })).filter((g) => g.courses.length > 0);
 
   const workbook = new ExcelJS.Workbook();
   workbook.creator = "Learning Experience Hub";
   workbook.created = new Date();
-  addGuideSheet(workbook, hubUrl, scope, courses.length, groups.map((g) => g.area.name));
+  addGuideSheet(workbook, hubUrl, courses.length, groups.length);
   for (const group of groups) addAreaSheet(workbook, group.area.name, group.courses, hubUrl);
 
   const buffer = await workbook.xlsx.writeBuffer();
   const blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
-  const slug = (areaId ?? (groups.length === 1 ? groups[0].area.id : "all-areas")).toString();
   const date = new Date().toISOString().slice(0, 10);
   const url = URL.createObjectURL(blob);
-  const link = Object.assign(document.createElement("a"), { href: url, download: `DigiBlu-training-matrix-${slug}-${date}.xlsx` });
+  const link = Object.assign(document.createElement("a"), { href: url, download: `DigiBlu-training-matrix-${date}.xlsx` });
   document.body.append(link);
   link.click();
   link.remove();

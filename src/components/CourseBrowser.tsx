@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { CourseCard } from "@/components/CourseCard";
-import { ExportMatrixButton } from "@/components/ExportMatrixButton";
 import { Icon } from "@/components/Icon";
 import { SKILL_AREAS } from "@/content/skill-areas";
 import { COURSES, getProvider } from "@/lib/catalogue";
@@ -143,21 +142,18 @@ export function CourseBrowser() {
             </button>
           )}
         </div>
-        <div className="flex flex-wrap items-center gap-3">
-          <ExportMatrixButton courses={results} scope={activeCount > 0 ? "Filtered courses" : "All courses"} />
-          <label className="flex items-center gap-2 text-sm muted">
-            Sort
-            <select
-              className="select"
-              value={filters.sort}
-              onChange={(e) => setFilters((f) => ({ ...f, sort: e.target.value }))}
-            >
-              <option value="">Recommended</option>
-              <option value="title">Title, A to Z</option>
-              <option value="level">Level, beginner first</option>
-            </select>
-          </label>
-        </div>
+        <label className="flex items-center gap-2 text-sm muted">
+          Sort
+          <select
+            className="select"
+            value={filters.sort}
+            onChange={(e) => setFilters((f) => ({ ...f, sort: e.target.value }))}
+          >
+            <option value="">Recommended</option>
+            <option value="title">Title, A to Z</option>
+            <option value="level">Level, beginner first</option>
+          </select>
+        </label>
       </div>
 
       <div className="browse">

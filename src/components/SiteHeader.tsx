@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { ExportMatrixButton } from "@/components/ExportMatrixButton";
 import { useMyList } from "@/lib/my-list";
 import { THEME_KEY } from "@/lib/theme";
 
 // The navigation follows digiblu.com: fixed, transparent at rest, and an inset
-// rounded frosted-glass panel once the page scrolls past 24px. Below 900px the
-// links move into a menu behind a hamburger, and the theme button moves into
-// that menu as a labelled row. "My list" is the call to action on the right.
+// rounded frosted-glass panel once the page scrolls past 24px. Below 980px the
+// links move into a menu behind a hamburger, and the bar reads My list, theme
+// button, menu. "My list" is the call to action on the right.
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -123,7 +124,7 @@ export function SiteHeader() {
       if (!barRef.current?.contains(event.target as Node)) setMenuOpen(false);
     };
     const onResize = () => {
-      if (window.innerWidth > 900) setMenuOpen(false);
+      if (window.innerWidth > 980) setMenuOpen(false);
     };
     document.addEventListener("keydown", onKey);
     document.addEventListener("click", onClick);
@@ -152,6 +153,9 @@ export function SiteHeader() {
               </Link>
             </li>
           ))}
+          <li>
+            <ExportMatrixButton className="site-nav__link" />
+          </li>
         </ul>
 
         <div className="site-nav__right">
@@ -199,12 +203,8 @@ export function SiteHeader() {
               </li>
             ))}
           </ul>
-          {/* The theme button moves here below 900px; its visible label matches its accessible name. */}
           <div className="mobile-menu__actions">
-            <button type="button" className="theme-toggle theme-toggle--row" onClick={toggleTheme}>
-              <ThemeIcons />
-              <span>{themeLabel}</span>
-            </button>
+            <ExportMatrixButton className="mobile-menu__button" onExport={closeMenu} />
           </div>
         </div>
       </nav>

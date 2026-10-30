@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CourseCard } from "@/components/CourseCard";
-import { ExportMatrixButton } from "@/components/ExportMatrixButton";
 import { OUTCOME_INFO } from "@/content/skill-areas";
 import { coursesInArea, getArea } from "@/lib/catalogue";
 import { OUTCOMES, type SkillAreaId } from "@/lib/types";
@@ -17,19 +16,16 @@ export function AreaCourses({ areaId }: { areaId: SkillAreaId }) {
 
   return (
     <>
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div role="group" aria-label="Filter by role" className="flex flex-wrap items-center gap-2">
-          <span className="filter-group__label !mb-0 mr-2">I am a</span>
-          <button type="button" className="chip" aria-pressed={role === null} onClick={() => setRole(null)}>
-            Any role
+      <div role="group" aria-label="Filter by role" className="flex flex-wrap items-center gap-2">
+        <span className="filter-group__label !mb-0 mr-2">I am a</span>
+        <button type="button" className="chip" aria-pressed={role === null} onClick={() => setRole(null)}>
+          Any role
+        </button>
+        {roles.map((r) => (
+          <button key={r} type="button" className="chip" aria-pressed={role === r} onClick={() => setRole(r)}>
+            {r}
           </button>
-          {roles.map((r) => (
-            <button key={r} type="button" className="chip" aria-pressed={role === r} onClick={() => setRole(r)}>
-              {r}
-            </button>
-          ))}
-        </div>
-        <ExportMatrixButton courses={courses} areaId={areaId} scope={role ? `${area.name}, ${role}` : area.name} />
+        ))}
       </div>
 
       {OUTCOMES.map((outcome) => {
