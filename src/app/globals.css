@@ -195,6 +195,7 @@ label {
 }
 
 .eyebrow {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -279,6 +280,10 @@ label {
   background: rgba(var(--ink-rgb), 0.06);
   border-color: var(--hairline);
 }
+.icon-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
 .icon-btn[aria-pressed="true"] {
   color: var(--accent-text);
   border-color: var(--blue);
@@ -286,6 +291,7 @@ label {
 }
 
 .chip {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -628,7 +634,7 @@ label {
     gap: 10px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .brand__divider,
   .brand__label {
     display: none;
@@ -1098,6 +1104,7 @@ main {
   gap: 6px;
 }
 .band__role {
+  white-space: nowrap;
   padding: 4px 12px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.35);
@@ -1266,6 +1273,109 @@ main {
   color: var(--text);
   font-size: 14px;
 }
+/* ---------- Carousels ----------
+   Below 641px a track swipes sideways with the next card peeking in. It runs to
+   the screen edges, so cards scroll out from under the page gutters. */
+
+.carousel__dots {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+.carousel__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(var(--ink-rgb), 0.25);
+  transition: width 0.3s var(--ease), background-color 0.2s;
+}
+.carousel__dot.is-active {
+  width: 18px;
+  background: var(--blue);
+}
+.carousel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.carousel__arrows {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+.carousel--always .carousel__track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  /* Room for a card's hover lift, which the scrolling track would otherwise clip. */
+  padding-block: 4px 8px;
+}
+.carousel--always .carousel__track::-webkit-scrollbar {
+  display: none;
+}
+.carousel--always .carousel__track > * {
+  flex: 0 0 calc((100% - 32px) / 3);
+  scroll-snap-align: start;
+}
+@media (max-width: 1000px) {
+  .carousel--always .carousel__track > * {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+@media (max-width: 640px) {
+  .carousel .carousel__track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding: 4px var(--gutter) 8px;
+    scroll-padding-inline: var(--gutter);
+  }
+  .carousel .carousel__track::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel .carousel__track > * {
+    flex: 0 0 86%;
+    scroll-snap-align: start;
+  }
+  .carousel__dots {
+    display: flex;
+  }
+  .carousel__arrows {
+    display: none;
+  }
+  /* The areas page is the list itself: compact tiles rather than a carousel. */
+  .area-grid.area-grid--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .area-grid--compact .area-card {
+    min-height: 124px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  .area-grid--compact .area-card__name {
+    font-size: 17px;
+  }
+  .area-grid--compact .area-card__summary,
+  .area-grid--compact .area-card__roles,
+  .area-grid--compact .area-card__arrow {
+    display: none;
+  }
+  .area-grid--compact .area-card__foot {
+    padding-top: 10px;
+    font-size: 12.5px;
+  }
+}
+
 .footer-link {
   color: var(--text);
   text-underline-offset: 4px;

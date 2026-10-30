@@ -11,7 +11,7 @@ export function AreaCard({ area }: { area: SkillArea }) {
       <p className="area-card__summary">{area.summary}</p>
       <div className="area-card__foot">
         <span>
-          {count} resources · {area.roles.length} roles
+          {count} resources<span className="area-card__roles"> · {area.roles.length} roles</span>
         </span>
         <span className="area-card__arrow" aria-hidden="true">
           <Icon name="arrow" size={16} />

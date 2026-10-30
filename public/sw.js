@@ -1,4 +1,4 @@
-// Service worker for the Knowledge Hub: lets it open offline and from the home
+// Service worker for the Learning Experience Hub: lets it open offline and from the home
 // screen like an app, without ever holding back an update.
 //
 // - Pages: network first, so anyone online always gets the latest release; the

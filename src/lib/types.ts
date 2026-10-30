@@ -5,6 +5,7 @@ export const SKILL_AREA_IDS = [
   "data-analytics",
   "ai",
   "automation-low-code",
+  "process-improvement",
   "software-development",
   "cloud-infrastructure",
   "project-product-management",

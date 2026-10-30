@@ -70,7 +70,7 @@ function addGuideSheet(workbook: Workbook, hubUrl: string, scope: string, course
   row += 1;
   const date = new Date().toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
   const intro = ws.getCell(row, 2);
-  intro.value = `Created from the DigiBlu Learning Experience Knowledge Hub on ${date}. ${scope}: ${courseCount} ${
+  intro.value = `Created from the Learning Experience Hub on ${date}. ${scope}: ${courseCount} ${
     courseCount === 1 ? "course" : "courses"
   } on ${sheets.length} ${sheets.length === 1 ? "sheet" : "sheets"} (${sheets.join(", ")}).`;
   intro.font = { color: argb(GREY) };
@@ -81,10 +81,10 @@ function addGuideSheet(workbook: Workbook, hubUrl: string, scope: string, course
   row += 1;
 
   heading("How to use it");
-  line("1. Add people", "Each area of learning has its own sheet. Add one person per row: name in column A, role in column B.");
+  line("1. Add people", "Each area of expertise has its own sheet. Add one person per row: name in column A, role in column B.");
   line("2. Grade", "Use the drop-down in each cell to grade the person from 0 to 5 for that course or certification. Leave a cell blank if it does not apply to them.");
   line("3. Read across", "The Team average row under the people shows where the team is strong and where learning would help most. Course titles link to the course in the hub.");
-  line("4. Keep it private", "This file will hold people's names and assessments, which is personal data. Keep it in a restricted SharePoint or Teams location, share it only with the people who need it, and never upload it to the Knowledge Hub.");
+  line("4. Keep it private", "This file will hold people's names and assessments, which is personal data. Keep it in a restricted SharePoint or Teams location, share it only with the people who need it, and never upload it to the Learning Experience Hub.");
   line("5. Leave row 3 alone", "Each area sheet has a hidden row 3 holding course IDs. A later version of the hub will use them to import this matrix, so do not edit or delete it.");
 
   heading("Grades");
@@ -205,7 +205,7 @@ function addAreaSheet(workbook: Workbook, name: string, courses: Course[], hubUr
 }
 
 /**
- * Downloads a matrix for the given courses: one sheet per area of learning, by each
+ * Downloads a matrix for the given courses: one sheet per area of expertise, by each
  * course's main area. Pass `areaId` to put every course on that area's sheet
  * (used from an area page, where courses shared with another area belong there).
  */
@@ -227,7 +227,7 @@ export async function downloadTrainingMatrix({
   })).filter((g) => g.courses.length > 0);
 
   const workbook = new ExcelJS.Workbook();
-  workbook.creator = "DigiBlu Knowledge Hub";
+  workbook.creator = "Learning Experience Hub";
   workbook.created = new Date();
   addGuideSheet(workbook, hubUrl, scope, courses.length, groups.map((g) => g.area.name));
   for (const group of groups) addAreaSheet(workbook, group.area.name, group.courses, hubUrl);

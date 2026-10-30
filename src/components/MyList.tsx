@@ -18,7 +18,7 @@ export function MyList() {
           Use the bookmark on any course to keep it here, so you can come back to it when you are ready.
         </p>
         <Link href="/courses/" className="btn btn-primary mt-5">
-          Browse courses
+          See all learning
         </Link>
       </div>
     );

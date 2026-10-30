@@ -65,7 +65,7 @@ export function ContactForms() {
   };
 
   const open = (subject: string, lines: string[]) => {
-    const body = [...lines, "", `Sent from the DigiBlu Knowledge Hub: ${hubUrl()}/contact/`].join("\n");
+    const body = [...lines, "", `Sent from the Learning Experience Hub: ${hubUrl()}/contact/`].join("\n");
     const href = `mailto:${HUB_MAILBOX}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSent({ to: HUB_MAILBOX, subject, body });
     setCopied(false);
@@ -88,7 +88,7 @@ export function ContactForms() {
       `What to add: ${title.trim()}`,
       `Link: ${link.trim() || "Not given"}`,
       `Provider: ${provider.trim() || "Not given"}`,
-      `Learning: ${areaName}`,
+      `Area of expertise: ${areaName}`,
       `What it gives: ${kind || "Not sure"}`,
       `Cost: ${cost || "Not sure"}`,
       "",
@@ -219,7 +219,7 @@ export function ContactForms() {
                 placeholder="e.g. Microsoft Learn"
               />
             </Field>
-            <Field id="area" label="Learning">
+            <Field id="area" label="Area of expertise">
               <select id="area" className="input" value={area} onChange={(e) => setArea(e.target.value)}>
                 <option value="">Not sure</option>
                 {SKILL_AREAS.map((a) => (

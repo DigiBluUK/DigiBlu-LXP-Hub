@@ -20,13 +20,13 @@ const dmSans = localFont({
 // DigiBlu employees only, so search engines are always kept out.
 export const metadata: Metadata = {
   title: {
-    default: "DigiBlu Learning Experience Knowledge Hub",
-    template: "%s · DigiBlu Knowledge Hub",
+    default: "Learning Experience Hub",
+    template: "%s · Learning Experience Hub",
   },
   description:
     "Courses, certifications and free learning for everyone at DigiBlu, organised by area and role.",
   robots: { index: false, follow: false },
-  appleWebApp: { capable: true, title: "Knowledge Hub", statusBarStyle: "black-translucent" },
+  appleWebApp: { capable: true, title: "Learning Hub", statusBarStyle: "black-translucent" },
   formatDetection: { telephone: false },
 };
 
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="site-footer">
           <div className="container flex flex-wrap justify-between gap-4">
             <div className="flex flex-col gap-2">
-              <p>DigiBlu Learning Experience Knowledge Hub · Version 1</p>
+              <p>Learning Experience Hub · Version 1</p>
               <p className="flex flex-wrap gap-x-5 gap-y-1">
                 <Link href="/contact/?type=request" className="footer-link">
                   Request a course

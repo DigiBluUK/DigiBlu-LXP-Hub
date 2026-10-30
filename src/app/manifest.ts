@@ -9,8 +9,8 @@ export const dynamic = "force-static";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: `${base}/`,
-    name: "DigiBlu Learning Experience Knowledge Hub",
-    short_name: "Knowledge Hub",
+    name: "Learning Experience Hub",
+    short_name: "Learning Hub",
     description: "Courses, certifications and free learning for everyone at DigiBlu, by area and role.",
     lang: "en-GB",
     start_url: `${base}/`,
@@ -25,8 +25,8 @@ export default function manifest(): MetadataRoute.Manifest {
       { src: `${base}/app-icons/maskable-512.png`, sizes: "512x512", type: "image/png", purpose: "maskable" },
     ],
     shortcuts: [
-      { name: "Browse courses", url: `${base}/courses/` },
-      { name: "Learning", url: `${base}/areas/` },
+      { name: "Learning", url: `${base}/courses/` },
+      { name: "Areas of expertise", url: `${base}/areas/` },
       { name: "My list", url: `${base}/my-list/` },
     ],
   };

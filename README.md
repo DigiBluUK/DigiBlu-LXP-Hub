@@ -1,4 +1,4 @@
-# DigiBlu Learning Experience Knowledge Hub
+# DigiBlu Learning Experience Hub
 
 An interactive guide to courses, certifications and free learning for DigiBlu employees, organised by skill area and role.
 
@@ -40,7 +40,7 @@ All course content lives in one file: [`src/content/courses.json`](src/content/c
 |---|---|
 | `id` | Permanent, lower-case words joined by hyphens, e.g. `data-pl300-power-bi-data-analyst`. **Never change or reuse an id**: saved lists point at it. |
 | `title`, `provider`, `url`, `description` | The basics. `url` must start with `https://`. |
-| `skillAreas` | One or more of `data-analytics`, `ai`, `automation-low-code`, `software-development`, `cloud-infrastructure`, `project-product-management`, `leadership-soft-skills`. The first is its main area. |
+| `skillAreas` | One or more of `data-analytics`, `ai`, `automation-low-code`, `process-improvement`, `software-development`, `cloud-infrastructure`, `project-product-management`, `leadership-soft-skills`. The first is its main area. |
 | `roles` | Who it suits, using the role names in [`src/content/skill-areas.ts`](src/content/skill-areas.ts). |
 | `level` | `Beginner`, `Intermediate` or `Advanced` |
 | `format` | `Online course`, `Learning path`, `Video`, `Guide` or `Book` |

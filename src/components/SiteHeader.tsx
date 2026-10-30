@@ -13,8 +13,8 @@ import { THEME_KEY } from "@/lib/theme";
 
 const LINKS = [
   { href: "/", label: "Home" },
-  { href: "/courses/", label: "Browse" },
-  { href: "/areas/", label: "Learning" },
+  { href: "/courses/", label: "Learning" },
+  { href: "/areas/", label: "Areas of expertise" },
   { href: "/contact/", label: "Contact" },
 ];
 
@@ -138,10 +138,10 @@ export function SiteHeader() {
   return (
     <div className={scrolled || menuOpen ? "site-nav is-scrolled" : "site-nav"}>
       <nav ref={barRef} className="site-nav__bar" aria-label="Main">
-        <Link href="/" className="site-nav__logo" aria-label="DigiBlu Knowledge Hub, home" onClick={closeMenu}>
+        <Link href="/" className="site-nav__logo" aria-label="Learning Experience Hub, home" onClick={closeMenu}>
           <span className="brand__mark" aria-hidden="true" />
           <span className="brand__divider" aria-hidden="true" />
-          <span className="brand__label">Knowledge Hub</span>
+          <span className="brand__label">Learning Experience Hub</span>
         </Link>
 
         <ul className="site-nav__center">

@@ -15,7 +15,7 @@ These change how much of the rest applies.
 - [x] **Audience**: internal only, for DigiBlu employees (decided 20 October 2026). Public SEO, AEO and GEO do not apply; sections 4 to 6 cover being easy to find and use inside DigiBlu instead.
 - [ ] **Access control**: put the launched hub behind DigiBlu sign-in (Cloudflare Access with Microsoft Entra ID). Until then the repository and the GitHub Pages link are public, so only public course information goes in: no names, no internal material, no training-matrix data.
 - [ ] **Address**: e.g. `learn.digiblu.com`, or a path on digiblu.com.
-- [ ] **Name**: final product name and short name (currently "DigiBlu Learning Experience Knowledge Hub" and "Knowledge Hub").
+- [ ] **Name**: final product name and short name (now "Learning Experience Hub", shortened to "Learning Hub" under the phone icon).
 - [ ] **Ownership**: who owns the content (L&D), who approves new courses, and how often links and prices are re-checked (suggest quarterly).
 - [ ] **Analytics**: none, privacy-first Cloudflare Web Analytics, or GA4 with Consent Mode like the website. A cookie banner is needed only if analytics sets cookies.
 
@@ -31,6 +31,11 @@ These change how much of the rest applies.
   - The two Udemy course pages block automated checks; open them to confirm the details.
   - Pragmatic Works: confirm the completion certificate is included on the free plan.
   - The Microsoft Applied Skills are listed as free; Microsoft's pages do not state a price.
+- [ ] Process Improvement (added 30 October 2026). Re-check:
+  - ABPMP CBPP and Camunda's BPMN course could only be confirmed through search results, because their sites block automated checks.
+  - Celonis Academy's course list could not be read, so its entry is general; link to a specific course if L&D prefer.
+  - The OpenLearn course covers operations management broadly and only touches on lean. Keep it only if L&D think it earns its place.
+  - ASQ's exam runs in set testing windows, so the dates may need checking before anyone books.
 - [ ] Prices confirmed or written as approximate; decide whether to show GBP alongside USD.
 - [ ] Roles in each area agreed with the heads of practice, with one spelling per role.
 - [ ] Decide whether DigiBlu's own material (onboarding, process training, TalentLMS courses) is listed alongside external courses.

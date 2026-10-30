@@ -6,7 +6,7 @@
 // forms explain that they are not set up yet instead of sending anywhere.
 export const HUB_MAILBOX = "";
 
-export const SUBJECT_PREFIX = "[Knowledge Hub]";
+export const SUBJECT_PREFIX = "[Learning Experience Hub]";
 
 export const MESSAGE_TOPICS = [
   { value: "question", label: "A question" },

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Carousel } from "@/components/Carousel";
 import { CourseCard } from "@/components/CourseCard";
 import { Icon } from "@/components/Icon";
 import { CostPill, OutcomePill } from "@/components/Pills";
@@ -28,7 +29,7 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
   const related = coursesInArea(area.id)
     .filter((c) => c.id !== course.id)
     .sort((a, b) => Number(b.outcome === course.outcome) - Number(a.outcome === course.outcome))
-    .slice(0, 3);
+    .slice(0, 8);
   const reviewed = new Date(`${course.lastReviewed}T00:00:00`).toLocaleDateString("en-GB", {
     day: "numeric",
     month: "long",
@@ -50,7 +51,7 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
     <section className="section pt-10">
       <div className="container">
         <nav aria-label="Breadcrumb" className="breadcrumb">
-          <Link href="/courses/">Browse</Link>
+          <Link href="/courses/">Learning</Link>
           <span aria-hidden="true">/</span>
           <Link href={`/areas/${area.id}/`}>{area.name}</Link>
         </nav>
@@ -101,7 +102,7 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
               <p className="muted mt-2">{OUTCOME_INFO[course.outcome].blurb}</p>
             </div>
             <div className="panel">
-              <p className="filter-group__label">Learning</p>
+              <p className="filter-group__label">Areas of expertise</p>
               <div className="flex flex-wrap gap-2">
                 {course.skillAreas.map((id) => (
                   <Link key={id} href={`/areas/${id}/`} className="chip">
@@ -124,12 +125,11 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
 
         {related.length > 0 && (
           <div className="mt-20">
-            <h2 className="h-section">More in {area.name}</h2>
-            <div className="course-grid mt-8">
+            <Carousel always label={`More in ${area.name}`} heading={<h2 className="h-section">More in {area.name}</h2>}>
               {related.map((c) => (
                 <CourseCard key={c.id} course={c} />
               ))}
-            </div>
+            </Carousel>
           </div>
         )}
       </div>

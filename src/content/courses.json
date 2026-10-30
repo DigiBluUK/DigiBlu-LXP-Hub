@@ -1106,7 +1106,8 @@
     "url": "https://learn.microsoft.com/en-us/training/paths/introduction-process-advisor/",
     "description": "Beginner path covering the process mining web portal, the Process Mining desktop app and Power BI reporting so you can find bottlenecks before deciding what to automate. Handy for analysts doing discovery work.",
     "skillAreas": [
-      "automation-low-code"
+      "automation-low-code",
+      "process-improvement"
     ],
     "roles": [
       "Business Analyst",
@@ -1431,6 +1432,360 @@
       "Blog"
     ],
     "lastReviewed": "2026-10-20"
+  },
+  {
+    "id": "proc-iassc-lean-six-sigma-green-belt",
+    "title": "IASSC Certified Lean Six Sigma Green Belt (ICGB)",
+    "provider": "IASSC (exam delivered by PeopleCert)",
+    "url": "https://www.peoplecert.org/Organizations/browse-certifications/Lean-Six-Sigma/IASSC-Lean-Six-Sigma-43/peoplecert-lean-six-sigma-iassc-certified-green-belt-icgb-3117",
+    "description": "An exam-only credential that tests DMAIC problem solving and the Lean Six Sigma tools used to reduce waste and variation. Suits practitioners who run or support improvement projects and want a vendor-neutral, widely recognised Green Belt.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Process Analyst",
+      "Business Analyst",
+      "Continuous Improvement Lead",
+      "Operations Manager",
+      "Consultant"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Exam voucher approx. GBP 305; training is extra and optional. Re-certification exam needed after 3 years.",
+    "outcome": "Certification",
+    "duration": "Exam approx. 3 hours; study time varies",
+    "prerequisites": "None formally; Lean Six Sigma training or prior Yellow Belt knowledge recommended",
+    "tags": [
+      "Lean Six Sigma",
+      "Six Sigma",
+      "Lean",
+      "DMAIC",
+      "Certification"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-asq-certified-six-sigma-green-belt",
+    "title": "Certified Six Sigma Green Belt (CSSGB)",
+    "provider": "ASQ (American Society for Quality)",
+    "url": "https://asq.org/cert/six-sigma-green-belt",
+    "description": "A long-established quality credential that assesses statistical thinking and the full DMAIC toolkit for people who support Black Belt-led projects. Best for experienced improvement practitioners who want a respected, experience-gated Six Sigma qualification.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Process Analyst",
+      "Continuous Improvement Lead",
+      "Operations Manager",
+      "Consultant"
+    ],
+    "level": "Advanced",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Exam approx. US$483 (ASQ members approx. US$100 less); retake approx. US$283. Prices may change.",
+    "outcome": "Certification",
+    "duration": "Computer-based exam approx. 4 hours 18 minutes; offered in testing windows",
+    "prerequisites": "3 years of paid, full-time work experience in one or more Green Belt Body of Knowledge areas; no education waiver",
+    "tags": [
+      "Six Sigma",
+      "Quality",
+      "DMAIC",
+      "Certification"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-omg-oceb-2-fundamental",
+    "title": "OMG Certified Expert in BPM 2 (OCEB 2) - Fundamental",
+    "provider": "OMG (Object Management Group)",
+    "url": "https://www.omg.org/oceb-2/",
+    "description": "The entry level of OMG's business process management certification track, covering business essentials, BPMN modelling and process governance. A good fit for analysts who will contribute to BPM and BPMN modelling projects; Intermediate and Advanced levels follow.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Business Analyst",
+      "Process Analyst",
+      "Process Owner",
+      "Consultant"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Exam fee not stated on the OMG page; booked through Pearson VUE. Check current price and vouchers.",
+    "outcome": "Certification",
+    "duration": "Exam-based; self-study time varies",
+    "prerequisites": "None for Fundamental; it is required before Intermediate and Advanced",
+    "tags": [
+      "BPM",
+      "BPMN",
+      "Process Modelling",
+      "Certification"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-abpmp-cbpp",
+    "title": "Certified Business Process Professional (CBPP)",
+    "provider": "ABPMP (Association of Business Process Management Professionals)",
+    "url": "https://abpmp.org/page/CBPP_overview",
+    "description": "A practitioner-level BPM credential aligned to the ABPMP BPM CBOK, covering process modelling, analysis, design, measurement and governance. Suits experienced process professionals and consultants who want a recognised proof of end-to-end BPM competence.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Process Analyst",
+      "Business Analyst",
+      "Process Owner",
+      "Continuous Improvement Lead",
+      "Consultant"
+    ],
+    "level": "Advanced",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Application fee approx. US$75 per ABPMP page; exam fee is extra, check ABPMP for current pricing.",
+    "outcome": "Certification",
+    "duration": "Exam approx. 3 hours; study time varies",
+    "prerequisites": "Around 4 years of business process experience (some credit available for related certifications or courses)",
+    "tags": [
+      "BPM",
+      "Process Management",
+      "Process Governance",
+      "Certification"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-openlearn-introduction-operations-management",
+    "title": "Introduction to operations management",
+    "provider": "OpenLearn (The Open University)",
+    "url": "https://www.open.edu/openlearn/money-business/business-strategy-studies/introduction-operations-management/content-section-0",
+    "description": "A short free course on how organisations turn inputs into outputs, what operations managers do and how operations strategy is set. Gives a solid process-thinking grounding for people moving into improvement or operations roles; it is general operations management rather than a Lean or Six Sigma course.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Operations Manager",
+      "Process Owner",
+      "Process Analyst",
+      "Business Analyst"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Completion certificate",
+    "duration": "~6 hours",
+    "prerequisites": "",
+    "tags": [
+      "Operations Management",
+      "Process Thinking",
+      "Lean"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-coursera-six-sigma-green-belt-specialization",
+    "title": "Six Sigma Green Belt Specialization",
+    "provider": "Coursera (Kennesaw State University)",
+    "url": "https://www.coursera.org/specializations/six-sigma-green-belt",
+    "description": "A four-course university series that teaches Six Sigma and DMAIC project methods for Green Belt level work. A good structured option for practitioners who want a completion certificate and practice before sitting an industry exam; it is not itself a professional accreditation.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Process Analyst",
+      "Business Analyst",
+      "Continuous Improvement Lead",
+      "Operations Manager"
+    ],
+    "level": "Intermediate",
+    "format": "Learning path",
+    "cost": "Paid",
+    "costDetails": "Coursera subscription or Coursera Plus; check Coursera for the current price.",
+    "outcome": "Completion certificate",
+    "duration": "~36 hours across 4 courses",
+    "prerequisites": "Some related experience; Six Sigma Yellow Belt content advised first",
+    "tags": [
+      "Six Sigma",
+      "Green Belt",
+      "DMAIC",
+      "Quality"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-coursera-process-mining-data-science-in-action",
+    "title": "Process Mining: Data science in Action",
+    "provider": "Coursera (Eindhoven University of Technology)",
+    "url": "https://www.coursera.org/learn/process-mining",
+    "description": "A university course taught by process mining pioneer Wil van der Aalst on discovering, checking and improving real processes from event data. Suits analysts who want the academic foundations behind tools such as Celonis rather than a single vendor's training.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Process Analyst",
+      "Business Analyst",
+      "Consultant"
+    ],
+    "level": "Intermediate",
+    "format": "Online course",
+    "cost": "Paid",
+    "costDetails": "Included with Coursera Plus; certificate needs a paid enrolment. Check Coursera for the current price.",
+    "outcome": "Completion certificate",
+    "duration": "~20 hours (6 modules, self-paced)",
+    "prerequisites": "Some related experience; basic data and process modelling familiarity helps",
+    "tags": [
+      "Process Mining",
+      "Process Discovery",
+      "Data Science"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-celonis-academy-process-mining",
+    "title": "Celonis Academy - free process mining training",
+    "provider": "Celonis Academy",
+    "url": "https://www.celonis.com/academy/",
+    "description": "Free-to-register online training from the leading process mining vendor, organised into role- and goal-based tracks that run from process mining basics to building analyses. Useful for analysts who want hands-on exposure to the Celonis platform; optional qualification exams earn digital badges.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Process Analyst",
+      "Business Analyst",
+      "Process Owner",
+      "Consultant"
+    ],
+    "level": "Beginner",
+    "format": "Learning path",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced",
+    "prerequisites": "Free Celonis Academy account",
+    "tags": [
+      "Process Mining",
+      "Celonis",
+      "Process Analysis"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-camunda-academy-bpmn-overview",
+    "title": "BPMN - Overview",
+    "provider": "Camunda Academy",
+    "url": "https://academy.camunda.com/bpmn-overview",
+    "description": "A short, free introduction to BPMN 2.0 from a process automation vendor, covering the notation and how to read and build process diagrams. Aimed at analysts and process owners who need a practical starting point before more detailed modelling courses.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Business Analyst",
+      "Process Analyst",
+      "Process Owner"
+    ],
+    "level": "Beginner",
+    "format": "Online course",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "~1 hour",
+    "prerequisites": "Free Camunda Academy account",
+    "tags": [
+      "BPMN",
+      "Process Modelling",
+      "BPM"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-lei-what-is-lean",
+    "title": "What Is Lean?",
+    "provider": "Lean Enterprise Institute",
+    "url": "https://www.lean.org/explore-lean/what-is-lean/",
+    "description": "The Lean Enterprise Institute's own explanation of lean as a way of thinking and working built around the customer, with a framework covering purpose, work, capabilities, management systems and mindsets. A free starting point for anyone new to Lean who wants the authoritative definition.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Continuous Improvement Lead",
+      "Operations Manager",
+      "Process Owner",
+      "Consultant"
+    ],
+    "level": "Beginner",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reading",
+    "prerequisites": "",
+    "tags": [
+      "Lean",
+      "Continuous Improvement",
+      "Lean Thinking"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-lei-kaizen-resource-guide",
+    "title": "Kaizen - A Resource Guide",
+    "provider": "Lean Enterprise Institute",
+    "url": "https://www.lean.org/lexicon-terms/kaizen/",
+    "description": "A free reference page on kaizen as steady incremental improvement built on a standardised baseline, including an improvement routine, kaizen events, common pitfalls and further reading. Useful for continuous improvement leads who want a grounded view beyond the buzzword.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Continuous Improvement Lead",
+      "Operations Manager",
+      "Process Owner",
+      "Consultant"
+    ],
+    "level": "Intermediate",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Self-paced reading",
+    "prerequisites": "Basic familiarity with Lean concepts helps",
+    "tags": [
+      "Kaizen",
+      "Continuous Improvement",
+      "Lean",
+      "PDCA"
+    ],
+    "lastReviewed": "2026-10-30"
+  },
+  {
+    "id": "proc-omg-bpmn-2-0-2-specification",
+    "title": "Business Process Model and Notation (BPMN) Version 2.0.2",
+    "provider": "OMG (Object Management Group)",
+    "url": "https://www.omg.org/spec/BPMN/2.0.2/",
+    "description": "The formal OMG standard that defines BPMN, with the normative PDF, schemas and examples. A dense reference for modellers and consultants who need the exact meaning of notation elements rather than a tutorial.",
+    "skillAreas": [
+      "process-improvement"
+    ],
+    "roles": [
+      "Business Analyst",
+      "Process Analyst",
+      "Consultant"
+    ],
+    "level": "Advanced",
+    "format": "Guide",
+    "cost": "Free",
+    "costDetails": "",
+    "outcome": "Knowledge",
+    "duration": "Reference document",
+    "prerequisites": "Working knowledge of BPMN basics recommended",
+    "tags": [
+      "BPMN",
+      "Process Modelling",
+      "Standards"
+    ],
+    "lastReviewed": "2026-10-30"
   },
   {
     "id": "dev-gh900-github-foundations",

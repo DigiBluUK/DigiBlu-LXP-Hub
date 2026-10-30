@@ -1,6 +1,6 @@
 import type { Outcome, SkillArea } from "@/lib/types";
 
-// The six skill areas, in the order they appear across the hub. Adding an area
+// The areas of expertise, in the order they appear across the hub. Adding an area
 // means adding it here and to SKILL_AREA_IDS in src/lib/types.ts.
 export const SKILL_AREAS: SkillArea[] = [
   {
@@ -32,6 +32,21 @@ export const SKILL_AREAS: SkillArea[] = [
       "RPA Developer",
       "Power Platform Developer",
       "Solution Architect",
+    ],
+  },
+  {
+    id: "process-improvement",
+    name: "Process Improvement",
+    summary: "Lean, Six Sigma, process mapping and process mining - making work flow better.",
+    description:
+      "Find and fix what slows work down. Lean and Six Sigma, continuous improvement, mapping processes with BPMN, and process mining to see how work really flows.",
+    roles: [
+      "Process Analyst",
+      "Business Analyst",
+      "Process Owner",
+      "Continuous Improvement Lead",
+      "Operations Manager",
+      "Consultant",
     ],
   },
   {

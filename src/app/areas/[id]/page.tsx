@@ -27,13 +27,13 @@ export default async function AreaPage({ params }: PageProps<"/areas/[id]">) {
     <section className="section pt-10">
       <div className="container">
         <nav aria-label="Breadcrumb" className="breadcrumb mb-6">
-          <Link href="/areas/">Learning</Link>
+          <Link href="/areas/">Areas of expertise</Link>
           <span aria-hidden="true">/</span>
           <span aria-current="page">{area.name}</span>
         </nav>
 
         <div className="band" style={{ background: areaGradient(area.id) }}>
-          <span className="eyebrow eyebrow--on-brand">Learning</span>
+          <span className="eyebrow eyebrow--on-brand">Area of expertise</span>
           <h1 className="h-page mt-4">{area.name}</h1>
           <p className="lede mt-4">{area.description}</p>
           <p className="mt-6 text-white/85">

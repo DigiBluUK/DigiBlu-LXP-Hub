@@ -1,6 +1,7 @@
 import Form from "next/form";
 import Link from "next/link";
 import { AreaCard } from "@/components/AreaCard";
+import { Carousel } from "@/components/Carousel";
 import { Icon } from "@/components/Icon";
 import { ProviderStrip } from "@/components/ProviderStrip";
 import { OUTCOME_INFO, SKILL_AREAS } from "@/content/skill-areas";
@@ -14,7 +15,7 @@ const ROADMAP = [
   {
     stage: "Now",
     title: "Find and save",
-    text: "Browse by area and role, filter by what you get and what it costs, and save courses to My list on this device.",
+    text: "Find learning by area and role, filter by what you get and what it costs, and save courses to My list.",
   },
   {
     stage: "Next",
@@ -33,7 +34,7 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="container">
-          <span className="eyebrow">DigiBlu · Learning Experience Knowledge Hub</span>
+          <span className="eyebrow">Learning Experience Hub</span>
           <h1 className="h-hero mt-6 max-w-4xl">
             Find the right learning <span className="accent">for your role.</span>
           </h1>
@@ -67,7 +68,7 @@ export default function Home() {
           <div className="stats mt-12">
             {[
               [STATS.total, "learning resources"],
-              [STATS.areas, "areas of learning"],
+              [STATS.areas, "areas of expertise"],
               [STATS.certifications, "industry certifications"],
               [STATS.free, "free to start"],
             ].map(([value, label]) => (
@@ -84,20 +85,20 @@ export default function Home() {
         <div className="container">
           <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <span className="eyebrow">Learning</span>
+              <span className="eyebrow">Areas of expertise</span>
               <h2 id="areas-heading" className="h-section mt-4">
-                Start with your area of work
+                Start with your area of expertise
               </h2>
             </div>
             <Link href="/courses/" className="btn btn-ghost">
-              Browse everything <Icon name="arrow" size={16} />
+              See all learning <Icon name="arrow" size={16} />
             </Link>
           </div>
-          <div className="area-grid">
+          <Carousel label="Areas of expertise" className="area-grid">
             {SKILL_AREAS.map((area) => (
               <AreaCard key={area.id} area={area} />
             ))}
-          </div>
+          </Carousel>
         </div>
       </section>
 
