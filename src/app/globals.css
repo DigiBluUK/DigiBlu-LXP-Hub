@@ -233,8 +233,13 @@ label {
   opacity: 0.5;
   cursor: not-allowed;
 }
+/* Gradient fills take no border, not even a transparent one: the gradient repeats
+   under it and shows as a bright ring (BRAND.md). The extra 1px of padding keeps
+   the size the border gave. Same for selected chips and certification pills. */
 .btn-primary {
   background: var(--brand-fill);
+  border: 0;
+  padding: 11px 23px;
   color: #fff;
 }
 .btn-primary:hover,
@@ -310,7 +315,8 @@ label {
 }
 .chip[aria-pressed="true"] {
   background: var(--brand-fill);
-  border-color: transparent;
+  border: 0;
+  padding: 7px 15px;
   color: #fff;
 }
 .chip__count {
@@ -1026,7 +1032,8 @@ main {
 }
 .pill--cert {
   background: var(--brand-fill);
-  border-color: transparent;
+  border: 0;
+  padding: 4px 11px;
   color: #fff;
 }
 .pill--certificate {
