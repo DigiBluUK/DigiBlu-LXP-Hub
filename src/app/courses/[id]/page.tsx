@@ -36,9 +36,17 @@ export default async function CoursePage({ params }: PageProps<"/courses/[id]">)
     year: "numeric",
   });
 
+  // A note that already opens with "Free" or "Paid" stands on its own.
+  const { cost, costDetails } = course;
+  const costLine = !costDetails
+    ? cost
+    : costDetails.toLowerCase().startsWith(cost.toLowerCase())
+      ? costDetails
+      : `${cost} · ${costDetails}`;
+
   const facts: { label: string; value: string; wide?: boolean }[] = [
     { label: "What you get", value: course.outcome },
-    { label: "Cost", value: course.costDetails ? `${course.cost} · ${course.costDetails}` : course.cost },
+    { label: "Cost", value: costLine },
     { label: "Level", value: course.level },
     { label: "Format", value: course.format },
     { label: "Time to complete", value: course.duration },
